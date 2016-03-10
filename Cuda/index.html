@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Start</title>
+  <!--fonts Google-->
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,600,700' rel='stylesheet' type='text/css'>
+  <!--подключен один минифицированный css файл в котором собраны(botstrap.css, font-awesome.css, animate.css и стили сайта)-->
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <header class="header-main wow slideInLeft">
+    <div class="container">
+      <nav class="navbar navbar-static-top">
+        <div class="navbar-brand">
+          <a href="#"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        <div class="header-main__nav navbar-right">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+            <i class="fa fa-bars fa-lg"></i>
+          </button>
+          <div class="clearfix"></div>
+          <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="nav navbar-nav">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">WORK</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1 class="header-main__title text-center">Hi there! We are the new kids on the block and we build awesome websites and mobile apps.</h1>
+      <button class="big-btn header-main__btn center-block" type="button">WORK WITH US!</button>
+    </div>
+  </header>
+  <section class="section services wow slideInRight" data-wow-delay="1s">
+    <div class="container">
+      <div class="section__summary row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2 class="title">SERVICES WE PROVIDE</h2>
+          <div class="line"></div>
+          <p>We are working with both individuals and businesses from all over the globe to create awesome websites and applications.</p>
+        </div>
+      </div>
+      <section class="row">
+        <div class="col-sm-6 col-md-3">
+          <img class="services__img wow bounceInDown" data-wow-delay="0.2s" src="img/icon__flag.png" alt="branding">
+          <h3>BRANDING</h3>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <img class="services__img wow bounceInDown" data-wow-delay="0.5s" src="img/icon__crayon.png" alt="disign">
+          <h3>DISIGN</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <img class="services__img wow bounceInDown" data-wow-delay="0.8s" src="img/icon__gears.png" alt="development">
+          <h3>DEVELOPMENT</h3>
+          <p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <img class="services__img wow bounceInDown" data-wow-delay="1s" src="img/icon__rocket.png" alt="rocket">
+          <h3>ROCKET SCIENCE</h3>
+          <p>Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="section team wow slideInLeft">
+    <div class="container">
+      <div class="section__summary row">
+        <div class="col-md-8 col-md-offset-2">
+          <h2 class="title">MEET OUR BEAUTIFUL TEAM</h2>
+          <div class="line"></div>
+          <p>We are a small team of designers and developers, who help brands with big ideas.</p>
+        </div>
+      </div>
+      <section class="row">
+        <div class="col-sm-6 col-md-3">
+          <img class="team__img img-responsive img-circle wow bounceIn" data-wow-delay="0.2s" src="img/team__ann.jpg" alt="ann">
+          <h3>ANNE HATHAWAY</h3>
+          <p class="team__post">CEO / Marketing Guru</p>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+          <div class="team__soc-link">
+            <span class="fa-stack">
+              <a href="#"><i class="fa fa-circle fa-stack-2x"></i></a>
+              <a href="#"><i class="fa fa-facebook fa-stack-1x"></i></a>
+            </span>
+            <span class="fa-stack">
+              <a href="#"><i class="fa fa-circle fa-stack-2x"></i></a>
+              <a href="#"><i class="fa fa-twitter fa-stack-1x"></i></a>
+            </span>
+            <span class="fa-stack">    
+              <a href="#"><i class="fa fa-circle fa-stack-2x"></i></a>
+              <a href="#"><i class="fa fa-linkedin fa-stack-1x"></i></a>
+            </span>
+            <span class="fa-stack">    
+              <a href="#"><i class="fa fa-circle fa-stack-2x"></i></a>
+              <a href="#"><i class="fa fa-envelope fa-stack-1x"></i></a>
+            </span>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <img class="team__img img-responsive img-circle wow bounceIn" data-wow-delay="0.5s" src="img/team__kate.jpg" alt="kate">
+          <h3>KATE UPTON</h3>
+          <p class="team__post">Creative Director</p>
+          <p>Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
+          <div class="team__soc-link">
+            <span class="fa-stack">
+              <a href="#"><i class="fa fa-circle fa-stack-2x"></i></a>
+              <a href="#"><i class="fa fa-twitter fa-stack-1x"></i></a>
+            </span>
+            <span class="fa-stack">    
+              <a href="#"><i class="fa fa-circle fa-stack-2x"></i></a>
+              <a href="#"><i class="fa fa-linkedin fa-stack-1x"></i></a>
+            </span>
+            <span class="fa-stack">    
+              <a href="#"><i class="fa fa-circle fa-stack-2x"></i></a>
+              <a href="#"><i class="fa fa-envelope fa-stack-1x"></i></a>
+            </span>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <img class="team__img img-responsive img-circle wow bounceIn" data-wow-delay="0.8s" src="img/team__olivia.jpg" alt="olivia">
+          <h3>OLIVIA WILDE</h3>
+          <p class="team__post">Lead Designer</p>
+          <p>Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
+          <div class="team__soc-link">
+            <span class="fa-stack">
+              <a href="#"><i class="fa fa-circle fa-stack-2x"></i></a>
+              <a href="#"><i class="fa fa-facebook fa-stack-1x"></i></a>
+            </span>
+            <span class="fa-stack">
+              <a href="#"><i class="fa fa-circle fa-stack-2x"></i></a>
+              <a href="#"><i class="fa fa-twitter fa-stack-1x"></i></a>
+            </span>
+            <span class="fa-stack">    
+              <a href="#"><i class="fa fa-circle fa-stack-2x"></i></a>
+              <a href="#"><i class="fa fa-linkedin fa-stack-1x"></i></a>
+            </span>
+            <span class="fa-stack">    
+              <a href="#"><i class="fa fa-circle fa-stack-2x"></i></a>
+              <a href="#"><i class="fa fa-envelope fa-stack-1x"></i></a>
+            </span>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <img class="team__img img-responsive img-circle wow bounceIn" data-wow-delay="1s" src="img/team__ashley.jpg" alt="ashley">
+          <h3>ASHLEY GREENE</h3>
+          <p class="team__post">SEO / Developer</p>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          <div class="team__soc-link">
+            <span class="fa-stack">
+              <a href="#"><i class="fa fa-circle fa-stack-2x"></i></a>
+              <a href="#"><i class="fa fa-twitter fa-stack-1x"></i></a>
+            </span>
+            <span class="fa-stack">    
+              <a href="#"><i class="fa fa-circle fa-stack-2x"></i></a>
+              <a href="#"><i class="fa fa-linkedin fa-stack-1x"></i></a>
+            </span>
+            <span class="fa-stack">    
+              <a href="#"><i class="fa fa-circle fa-stack-2x"></i></a>
+              <a href="#"><i class="fa fa-envelope fa-stack-1x"></i></a>
+            </span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+  <section class="section skills wow slideInRight">
+    <div class="container">
+      <div class="section__summary row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2 class="title">WE GOT SKILLS!</h2>
+          <div class="line"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <section class="row">
+        <div class="col-sm-6 col-md-3 wow lightSpeedIn" data-wow-delay="0.2s">
+          <div class="skills__progress center-block">
+            <img src="img/skills__web-design.png" alt="web-design">
+            <span>90%</span>
+          </div>
+          <h3>WEB DESIGN</h3>
+        </div>
+        <div class="col-sm-6 col-md-3 wow lightSpeedIn" data-wow-delay="0.5s">
+          <div class="skills__progress center-block">
+            <img src="img/skills__html-css.png" alt="html-css">
+            <span>75%</span>
+          </div>
+          <h3>HTML / CSS</h3>
+        </div>
+        <div class="col-sm-6 col-md-3 wow lightSpeedIn" data-wow-delay="0.8s">
+          <div class="skills__progress center-block">
+            <img src="img/skills__graph-design.png" alt="graph-design">
+            <span>70%</span>
+          </div>
+          <h3>GRAPHIC DESIGN</h3>
+        </div>
+        <div class="col-sm-6 col-md-3 wow lightSpeedIn" data-wow-delay="1s">
+          <div class="skills__progress center-block">
+            <img src="img/skills__UI.png" alt="ui">
+            <span>85%</span>
+          </div>
+          <h3>UI / UX</h3>
+        </div>
+      </section>
+    </div>
+  </section>
+  <section class="section portfolio wow bounceInUp" data-wow-offset="500">
+    <div class="container">
+      <div class="section__summary row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2 class="title">OUR PORTFOLIO</h2>
+          <div class="line"></div>
+          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam</p>
+          <div class="portfolio__nav">
+            <nav>
+              <ul class="nav nav-pills">
+                <li class="active"><a href="#">ALL</a></li>
+                <li><a href="#">WEB</a></li>
+                <li><a href="#">APPS</a></li>
+                <li><a href="#">ICONS</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <section class="row">
+        <div class="col-md-6">
+          <img class="img-responsive wow bounceInLeft" data-wow-delay="0.2s" src="img/portfolio__mock-up.png" alt="mock-up">
+          <h3>Isometric Perspective Mock-Up</h3>
+        </div>
+        <div class="col-md-6">
+          <img class="img-responsive wow bounceInRight" data-wow-delay="0.5s" src="img/portfolio__app-ui.png" alt="app-ui">
+          <h3>Time Zone App UI</h3>
+        </div>
+        <div class="col-md-6">
+          <img class="img-responsive wow bounceInLeft" data-wow-delay="0.8s" src="img/portfolio__viro-ui.png" alt="viro-ui">
+          <h3>Viro Media Players UI</h3>
+        </div>
+        <div class="col-md-6">
+          <img class="img-responsive wow bounceInRight" data-wow-delay="1.1s" src="img/portfolio__blog-ui.png" alt="blog-ui">
+          <h3>Blog / Magazine Flat UI Kit</h3>
+        </div>
+        <div class="clearfix"></div>
+        <button class="portfolio__btn big-btn center-block" type="button">LOAD MORE PROJECTS</button>
+      </section>
+    </div>
+  </section>
+  <section class="section feedback wow slideInLeft">
+    <div class="container">
+      <div class="section__summary row">
+        <div class="col-md-10 col-md-offset-1">
+          <h2 class="title">GET IN TOUCH</h2>
+          <div class="line"></div>
+          <p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+        </div>
+      </div>
+      <div class="col-md-10 col-md-offset-1 wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.2s">
+        <form action="#" method="post" name="feedback">
+          <div class="form-group col-md-6">
+            <label class="sr-only" for="name">Your Name</label>
+            <input class="form-control feedback__input--height" type="text" id="name" placeholder="Your Name*" autocomplete="on" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label class="sr-only" for="email">Your Email</label>
+            <input class="form-control feedback__input--height" type="email" id="email" placeholder="Your Email*" autocomplete="on" required>
+          </div>
+          <div class="col-md-12 form-group">
+            <textarea class="form-control" rows="7" name="message" id="message" placeholder="Your Message*" required></textarea>
+          </div>
+          <button type="submit" class="big-btn feedback__btn">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="footer-divider"></div>
+  <footer class="footer-main  wow bounceIn" data-wow-offset="80">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="col-md-5 col-sm-6">
+            <div class="col-md-4"><a href="#">Facebook</a></div>
+            <div class="col-md-4"><a href="#">Twitter</a></div>
+            <div class="col-md-4"><a href="#">Google+</a></div>
+          </div>
+          <div class="col-md-2 hidden-sm no-col-padding">
+            <div class="col-md-12 "><a href="#">LinkedIn</a></div>
+          </div>
+          <div class="col-md-5 col-sm-6">
+            <div class="col-md-4"><a href="#">Behance</a></div>
+            <div class="col-md-4"><a href="#">Dribbble</a></div>
+            <div class="col-md-4"><a href="#">GitHub</a></div>
+          </div>
+          <div class="visible-sm col-sm-12"><a href="#">LinkedIn</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass: 'wow', // default
+      animateClass: 'animated', // default
+      offset: 100, // default
+      mobile: true, // default
+      live: true // default
+    })
+    wow.init();
+
+  </script>
+</body>
+
+</html>
