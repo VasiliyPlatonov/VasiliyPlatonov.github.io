@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Золотой Дельфин</title>
+
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/animate.css">
+   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <link rel="stylesheet" href="css/ie-8__style.css">
+    <![endif]-->
+</head>
+
+<body>
+   <!--modal-callback-->
+   <div class="modal-callback  modal fade" id="modal-callback">
+      <!--ФОРМА СКРЫТА КЛАССОМ HIDDEN  !!! -->
+      <form class="modal-callback__form hidden" action="#" name="modalCallback" method="post">
+         <div class="modal-body">
+            <p class="modal-callback__title">Заполните форму, и мы вам перезвоним</p>
+            <input type="text" name="madalCallbackName" required placeholder="Ваше имя*">
+            <input type="tel" name="madalCallbackPhone" required placeholder="Ваш телефон*">
+            <button class="modal-callback__btn" type="submit">Отправить</button>
+         </div>
+      </form>
+      <div class="modal-body modal-callback__thanks">
+         <p>Спасибо!
+            <br> Мы свяжемся
+            <br> с Вами в
+            <br> ближайшее время.</p>
+      </div>
+   </div>
+   <!--/  modal-callback-->
+
+   <!--main-header-->
+   <header class="main-header">
+      <div class="container">
+         <div class="row">
+            <div class="main-header__logo  col-md-3">
+               <a href="index.html"><img src="img/header__logo.png" alt="logo"></a>
+            </div>
+            <div class="main-header__contacts col-sm-6 col-md-3 col-md-offset-2">
+               <a href="tel:88124692389"><i class="icon-phone" ></i>8 (812) 4692389</a>
+               <a href="mailto:mail@golden-dolphin"><i class="icon-mail"></i>mail@golden-dolphin</a>
+            </div>
+            <div class="main-header__wrap-callback-button  col-sm-6 col-md-4">
+               <button class="main-header__callback-button   wow bounceInDown">Заказать обратный звонок</button>
+            </div>
+         </div>
+      </div>
+      <!--screen-->
+      <section class="main-header__screen">
+         <!--NAVIGATION-->
+         <nav class="main-header__navigation">
+            <div class="container">
+               <div class="row">
+                  <div class="navbar-header">
+                     <button class="visible-xs" type="button" id="nav-icon4" data-toggle="collapse" data-target=".main-header__menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                     </button>
+                  </div>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="main-header__menu  collapse navbar-collapse">
+                     <div class="row">
+                        <ul>
+                           <!--navbar-nav nav-->
+                           <li><a href="#" data-hover="О студии">О студии</a></li>
+                           <li><a href="#" data-hover="Наши услуги">Наши услуги</a></li>
+                           <li><a href="#" data-hover="Портфолио">Портфолио</a></li>
+                           <li><a href="#" data-hover="Как мы работаем">Как мы работаем</a></li>
+                           <li><a href="#" data-hover="Отзывы">Отзывы</a></li>
+                           <li><a href="#" data-hover="Контакты">Контакты</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- /.navbar-collapse -->
+         </nav>
+         <!--  /NAVIGATION-->
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-12">
+                  <h1 class="main-header__offer">Cоздание, редизайн, поддержка, развитие и продвижение Вашего сайта</h1>
+               </div>
+            </div>
+         </div>
+         <div class="main-header__action">
+            <div class="container">
+               <div class="row">
+                  <p class="col-xs-12">Для первых 8 клиентов сайт или лендинг за 8000 руб.! Осталось 5 сайтов</p>
+                  <div class="col-xs-12">
+                     <div class="main-header__action-block">
+                        <div class="main-header__action-img-wrap">
+                           <img src="img/main-header/action/CarpetStore-img.jpg" alt="Сайт Сургутские ковры">
+                        </div>
+                        <div class="main-header__action-cl-info">
+                           <p><span>Клиент:</span> Сургутские ковры</p>
+                           <p><span>Отрасль:</span> Продажа ковров</p>
+                           <p>Разработали ярий и запоминающийся лендинг. Разработали ярий и запоминающийся лендинг.</p>
+                        </div>
+                     </div>
+                     <div class="main-header__action-block">
+                        <div class="main-header__action-img-wrap">
+                           <img src="img/main-header/action/VectorT-img.jpg" alt="Сайт Вектор Технология">
+                        </div>
+                        <div class="main-header__action-cl-info">
+                           <p><span>Клиент:</span> Вектор Технология</p>
+                           <p><span>Отрасль:</span> Проектирование и производство печатных плат</p>
+                           <p>Разработали ярий и запоминающийся лендинг. Разработали ярий и запоминающийся лендинг.</p>
+                        </div>
+                     </div>
+                     <div class="main-header__action-block">
+                        <div class="main-header__action-img-wrap">
+                           <img src="img/main-header/action/AlphaMotors-img.jpg" alt="Сайт Альфа Моторс">
+                        </div>
+                        <div class="main-header__action-cl-info">
+                           <p><span>Клиент:</span> Альфа Моторс</p>
+                           <p><span>Отрасль:</span> Продажа деталей для автомобиля</p>
+                           <p>Разработали ярий и запоминающийся лендинг. Разработали ярий и запоминающийся лендинг.</p>
+                        </div>
+                     </div>
+                     <div class="main-header__action-block">
+                        <div class="main-header__action-img-wrap">
+                           <a href="#"><img src="img/main-header/action/unknown-img.jpg" alt="Заказать"></a>
+                        </div>
+                        <button class="main-header__action-button">Заказать</button>
+                     </div>
+                     <div class="main-header__action-block">
+                        <div class="main-header__action-img-wrap">
+                           <a href="#"><img src="img/main-header/action/unknown-img.jpg" alt="Заказать"></a>
+                        </div>
+                        <button class="main-header__action-button">Заказать</button>
+                     </div>
+                     <div class="main-header__action-block">
+                        <div class="main-header__action-img-wrap">
+                           <a href="#"><img src="img/main-header/action/unknown-img.jpg" alt="Заказать"></a>
+                        </div>
+                        <button class="main-header__action-button">Заказать</button>
+                     </div>
+                     <div class="main-header__action-block">
+                        <div class="main-header__action-img-wrap">
+                           <a href="#"><img src="img/main-header/action/unknown-img.jpg" alt="Заказать"></a>
+                        </div>
+                        <button class="main-header__action-button">Заказать</button>
+                     </div>
+                     <div class="main-header__action-block">
+                        <div class="main-header__action-img-wrap">
+                           <a href="#"><img src="img/main-header/action/unknown-img.jpg" alt="Заказать"></a>
+                        </div>
+                        <button class="main-header__action-button">Заказать</button>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-7 col-md-4 col-md-offset-8 col-lg-3 col-lg-offset-9">
+                  <!--FORM--UNFILLED-->
+                  <form class="main-header__form  " action="#" name="application" method="post">
+                     <div class="main-header__form-inner">
+                        <p class="main-header__form-title">Оставьте заявку и мы <strong>БЕСПЛАТНО</strong> подготовим для Вас детальную концепцию Вашего проекта</p>
+                        <input type="text" required placeholder="Ваше имя*">
+                        <input type="tel" required placeholder="Ваш телефон*">
+                        <input type="email" required placeholder="Ваш E-mail*">
+                        <textarea name="application_message" id="application" placeholder="Ваше сообщение"></textarea>
+                     </div>
+                     <button type="submit">Отправить</button>
+                  </form>
+                  <!--FORM--UNFILLED-->
+                  <!--FORM--FILLED-->
+                  <!--ОТКЛЮЧЕНА КЛАССОМ hidden-->
+
+                  <div class="main-header__form--filled hidden">
+                     <p>Спасибо!
+                        <br> Мы свяжемся
+                        <br> с Вами в
+                        <br> ближайшее время.</p>
+                  </div>
+                  <!--/FORM--FILLED-->
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--/screen-->
+   </header>
+   <!--/  main-header-->
+   <!--we-do-->
+   <section class="we-do">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               <h2 class="section__title">Мы делаем</h2>
+               <div class="col-sm-6 col-md-3">
+                  <div class="we-do__block">
+                     <img src="img/we-do/we-do__web-card-img.png" alt="Сайт-визитка">
+                     <h3>Сайт-визитка</h3>
+                     <p>от 5 000 руб.</p>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3">
+                  <div class="we-do__block">
+                     <p class="we-do__block-plate">Быстрые продажи</p>
+                     <img src="img/we-do/we-do__landing-img.png" alt="Лендинг">
+                     <h3>Лендинг</h3>
+                     <p>От 10 000 руб.</p>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3">
+                  <div class="we-do__block">
+                     <img src="img/we-do/we-do__business-img.png" alt="Бизнес-сайт">
+                     <h3>Бизнес-сайт</h3>
+                     <p>От 20 000 руб.</p>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3">
+                  <div class="we-do__block">
+                     <img src="img/we-do/we-do__e-shop-img.png" alt="Интернет-магазин">
+                     <h3>Интернет-магазин</h3>
+                     <p>От 30 000 руб.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--/we-do-->
+   <!--our-work-->
+   <section class="our-work">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               <h2 class="section__title">Наши работы</h2>
+            </div>
+            <div class="our-work__slider-wrap  col-xs-10 col-xs-offset-1">
+               <ul class="roundabout-holder" id="carousel">
+                  <li><img src="img/our-works/our-works__slider-img1.jpg" alt=""></li>
+                  <li><img src="img/our-works/our-works__slider-img2.jpg" alt=""></li>
+                  <li><img src="img/our-works/our-works__slider-img1.jpg" alt=""></li>
+                  <li><img src="img/our-works/our-works__slider-img2.jpg" alt=""></li>
+                  <li><img src="img/our-works/our-works__slider-img1.jpg" alt=""></li>
+                  <li><img src="img/our-works/our-works__slider-img1.jpg" alt=""></li>
+                  <li><img src="img/our-works/our-works__slider-img2.jpg" alt=""></li>
+               </ul>
+               <div class="our-work__slider-btn-next"></div>
+               <div class="our-work__slider-btn-prev"></div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--/our-work-->
+   <!--workflow-->
+   <section class="workflow">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               <h2 class="section__title">Как мы работаем</h2>
+            </div>
+         </div>
+      </div>
+      <div class="workflow__row">
+         <div class="container">
+            <div class="row">
+               <div class="workflow__block odd  col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <div class="workflow__block-img-wrap">
+                     <img src="img/workflow/workflow__1-img.jpg" alt="Вы обращаетесь">
+                  </div>
+                  <p class="vertical-middle--md">Вы обращаетесь к нам и рассказываете, что Вам нужно</p>
+               </div>
+               <div class="workflow__block col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <div class="workflow__block-img-wrap">
+                     <img src="img/workflow/workflow__2-img.jpg" alt="Мы разрабатываем">
+                  </div>
+                  <p>Мы бесплатно разрабатываем концепцию Вашего проекта, которая включает анализ конкурентов, изучение Ваших клиентов, подготовку макетов страниц</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="workflow__row">
+         <div class="container">
+            <div class="row">
+               <div class="workflow__block odd  col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <div class="workflow__block-img-wrap">
+                     <img src="img/workflow/workflow__3-img.jpg" alt="Вы ознакамливаетесь">
+                  </div>
+                  <p>Вы ознакамливаетесь с результатми нашего предложения и принимаете (или не принемаете) решение о работе с нами</p>
+               </div>
+               <div class="workflow__block col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <div class="workflow__block-img-wrap">
+                     <img src="img/workflow/workflow__4-img.jpg" alt="Мы заключаем договор.">
+                  </div>
+                  <p class="vertical-middle--md">Мы с Вами заключаем договор.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="workflow__row">
+         <div class="container">
+            <div class="row">
+               <div class="workflow__block odd  col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <div class="workflow__block-img-wrap">
+                     <img src="img/workflow/workflow__5-img.jpg" alt="Вы вносите предоплату.">
+                  </div>
+                  <p class="vertical-middle--md">Вы вносите предоплату.</p>
+               </div>
+               <div class="workflow__block col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <div class="workflow__block-img-wrap">
+                     <img src="img/workflow/workflow__6-img.jpg" alt="Мы начинаем работу.">
+                  </div>
+                  <p class="vertical-middle--md">Мы начинаем работу.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="workflow__row last">
+         <div class="container">
+            <div class="row">
+               <div class="workflow__block odd  col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <div class="workflow__block-img-wrap">
+                     <img src="img/workflow/workflow__7-img.jpg" alt="Вы принимаете работу">
+                  </div>
+                  <p class="vertical-middle--md">Вы принимаете работу и вносите оставшуюся сумму за работу.</p>
+               </div>
+               <div class="workflow__block  col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                  <div class="workflow__block-img-wrap">
+                     <img src="img/workflow/workflow__8-img.jpg" alt="Вырабатываем рамки сотрудничества">
+                  </div>
+                  <p class="vertical-middle--md">Мы с Вами вырабатываем рамки дальнейшего сотрудничества по поддержке и развитию проекта.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--/workflow-->
+   <!--order-->
+   <section class="order">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               <h2 class="section__title">Оставьте заявку и мы с вами свяжемся</h2>
+            </div>
+            <div class="col-sm-10 col-sm-offset-1 col-md-7 col-md-offset-1">
+               <!--ФОРМА СКРЫТА КЛАССОМ HIDDEN  !!! -->
+               <form class="order__form hidden" action="" method="" name="">
+                  <input class="order__form-cl-name   md-left-sm-center" type="text" required placeholder="Ваше имя*">
+                  <input class="order__form-cl-email  md-right-sm-center" type="tel" required placeholder="Ваш телефон*">
+                  <textarea class="col-xs-12" name="" id="" placeholder="Ваше сообщение"></textarea>
+                  <button class="col-xs-12">Отправить заявку</button>
+               </form>
+               <div class="order__thanks">
+                  <p>Спасибо!
+                     <br> Мы свяжемся с Вами в
+                     <br> ближайшее время.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--/order-->
+   <!--reviews-->
+   <section class="reviews">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               <h2 class="section__title">Отзывы</h2>
+            </div>
+         </div>
+         <div class="container">
+            <div class="reviews__block  row">
+               <div class="reviews__before-img   col-sm-2 col-md-2 col-md-offset-1 ">
+                  <img src="img/reviews/reviews__img-1.jpg" alt="Евгения">
+               </div>
+               <div class="col-sm-8 col-sm-offset-1 col-md-offset-0 col-md-8">
+                  <p class="reviews__author">Евгения</p>
+                  <p class="reviews__text">С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение систем массового участия. .</p>
+                  <p class="reviews__date">21.11.14</p>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="reviews__block align-right  row">
+               <div class="reviews__after-img   col-sm-2 col-sm-push-8">
+                  <img src="img/reviews/reviews__img-2.jpg" alt="Александра">
+               </div>
+               <div class="col-sm-8 col-sm-pull-2 ">
+                  <p class="reviews__author">Александра</p>
+                  <p class="reviews__text">С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение систем массового участия. </p>
+                  <p class="reviews__date--align-right">21.11.14</p>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="reviews__block  row">
+               <div class="reviews__before-img   col-sm-2 col-md-2 col-md-offset-1">
+                  <img src="img/reviews/reviews__img-3.jpg" alt="Виктор">
+               </div>
+               <div class="col-sm-8 col-sm-offset-1 col-md-offset-0 col-md-8">
+                  <p class="reviews__author">Виктор</p>
+                  <p class="reviews__text">С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение систем массового участия.</p>
+                  <p class="reviews__date">21.11.14</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--/reviews-->
+
+   <!-- jQuery-->
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+   <script src="js/jquery-1.11.1.min.js"></script>
+
+   <!-- Include plugins-->
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/wow.min.js"></script>
+   <script src="js/Roundabout.js"></script>
+   <script src="js/settings.js"></script>
+
+</body>
+
+</html>

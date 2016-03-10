@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Диплом СПБ Написание рефератов, курсовых и дипломных работ в Санкт-Петербурге</title>
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="css/chosen.css">
+   <link rel="stylesheet" href="css/style.css">
+
+   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+   <!--modal-callback-->
+   <div class="modal-callback  modal fade" id="modal-callback">
+      <form class="modal-callback__form" action="#" name="modalCallback" method="post">
+         <div class="modal-body">
+            <p class="modal-callback__title"><span>Заполните форму</span>
+               <br>и мы вам перезвоним</p>
+            <input type="text" name="madalCallbackName" required placeholder="Ваше имя*">
+            <input type="tel" name="madalCallbackPhone" required placeholder="Ваш телефон*">
+            <button class="modal-callback__button" type="submit">Отправить</button>
+         </div>
+      </form>
+   </div>
+   <!--/  modal-callback-->
+   <!--main-header-->
+   <header class="main-header">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-sm-4 col-md-3">
+               <a href="index.html">
+                  <img class="main-header__logo" src="img/main-header/main-header__logo.png" alt="Диплом СПБ">
+               </a>
+            </div>
+
+            <div class="col-sm-8 col-md-6 col-lg-7">
+               <div class="row">
+                  <div class=" main-header__contacts">
+                     <a class="main-header__contacts-phone  col-md-6" href="tel:88127163027">+7 (812) 716-30-27</a>
+                     <a class="main-header__contacts-mail  col-md-6" href="mailto:diplom812@yandex.ru">diplom812@yandex.ru</a>
+                  </div>
+               </div>
+               <h1 class="main-header__title">Написание рефератов, курсовых и дипломных работ. <b>Успевайте в учебе!</b></h1>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-2">
+               <button class="main-header__callback-button">Обратный звонок</button>
+            </div>
+
+         </div>
+      </div>
+   </header>
+   <!--/main-header-->
+
+   <!--NAVIGATION-->
+   <nav class="main-navigation">
+      <div class="container">
+         <div class="row">
+
+            <div class="navbar-header">
+               <button type="button" type="button" class="visible-xs" id="nav-icon4" data-toggle="collapse" data-target=".menu">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+            </div>
+            <div class="collapse navbar-collapse menu">
+               <ul class="main-navigation__list">
+                  <div class="container">
+                     <div class=" row">
+                        <!--navbar-nav nav-->
+                        <li><a href="our-works.html">Наши работы</a></li>
+                        <li><a href="">Гарантии</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="articles.html">Статьи</a></li>
+                        <li><a href="author-reg.html">Авторам</a></li>
+                        <li><a href="#">Контакты</a></li>
+                     </div>
+                  </div>
+               </ul>
+            </div>
+         </div>
+      </div>
+
+   </nav>
+   <!--  /NAVIGATION-->
+   <!--jambotron-->
+   <section class="jambotron">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-6 col-lg-4">
+               <div class="jambotron-reasons">
+                  <ul>
+                     <li class="icon-chevron"><b>Безупречная репутация</b>
+                        <br>работаем 9 лет (с 2007 года)</li>
+                     <li class="icon-timer"><b>Скорость</b>
+                        <br>через 15 минут Вам уже позвонят</li>
+                     <li class="icon-check"><b>Проверка на плагиат</b>
+                        <br>предоплата от 25%</li>
+                     <li class="icon-free"><b>Отсутствие ограничений по количеству правок</b>
+                        <br>вернём деньги, если не сможем помочь</li>
+                     <li class="icon-one-hundred"><b>100% сдача выпускниками работ</b>
+                        <br>круглосуточно онлайн</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-lg-offset-4 text-right">
+               <form class="jambotron-form form  center-block" action="">
+                  <div class="jambotron-form__wrap ">
+                     <p class="jambotron-form__title"><span>Заполните форму</span>
+                        <br> и получите ответ через 15 минут</p>
+                     <div class="jambotron-form__select-wrap">
+                        <select class="jambotron-form__type" name="work-type" id="work-type">
+                           <option>Тип работы</option>
+                           <option>Задача</option>
+                           <option>Контрольная работа</option>
+                           <option>Курсовая работа</option>
+                           <option>Лабораторная работа</option>
+                           <option>Дипломная работа</option>
+                           <option>Реферат</option>
+                        </select>
+                     </div>
+                     <div class="jambotron-form__select-wrap">
+                        <select class="jambotron-form__subject" name="subject" id="subject">
+                           <option>Предмет</option>
+                           <option>Еще предмет</option>
+                           <option>Еще предмет</option>
+                           <option>Еще предмет</option>
+                        </select>
+                     </div>
+                     <input type="text" placeholder="Ваше имя*" required>
+                     <input type="email" placeholder="Ваш e-mail*" required>
+                     <button class="jambotron-form__callback-button">Узнать стоимость</button>
+                  </div>
+                  <p class="jambotron-form__thanks  hidden">Спасибо!
+                     <br>Мы перезвоним Вам в течение 15 минут</p>
+               </form>
+            </div>
+            <div class="jambotron-work-types hidden-sm hidden-xs col-xs-12">
+               <div class="jambotron-work-types__block">
+                  <i class="icon-work-types__diplom"></i>
+                  <div class="jambotron-work-types-text-wrap">
+                     <p class="jambotron-work-types__title">Дипломная работа</p>
+                     <p>от 1000 руб.
+                        <br> от 1 дня.</p>
+                  </div>
+               </div>
+               <div class="jambotron-work-types__block">
+                  <i class="icon-work-types__course"></i>
+                  <div class="jambotron-work-types-text-wrap">
+                     <p class="jambotron-work-types__title">Курсовая работа</p>
+                     <p>от 1000 руб.
+                        <br> от 1 дня.</p>
+                  </div>
+               </div>
+
+               <div class="jambotron-work-types__block">
+                  <i class="icon-work-types__control"></i>
+                  <div class="jambotron-work-types-text-wrap">
+                     <p class="jambotron-work-types__title">Контрольная работа</p>
+                     <p>от 1000 руб.
+                        <br> от 1 дня.</p>
+                  </div>
+               </div>
+               <div class="jambotron-work-types__block">
+                  <i class="icon-work-types__MBA"></i>
+                  <div class="jambotron-work-types-text-wrap">
+                     <p class="jambotron-work-types__title">Диплом MBA</p>
+                     <p>от 1000 руб.
+                        <br> от 1 дня.</p>
+                  </div>
+               </div>
+               <div class="jambotron-work-types__block">
+                  <i class="icon-work-types__referat"></i>
+                  <div class="jambotron-work-types-text-wrap">
+                     <p class="jambotron-work-types__title">Реферат</p>
+                     <p>от 1000 руб.
+                        <br> от 1 дня.</p>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--/jambotron-->
+   <!--about-us-->
+   <section class="about-us">
+      <div class="container">
+         <div class="row">
+            <h2 class="section-title">О нас</h2>
+
+            <div class="col-xs-6 col-sm-4">
+               <img class="img-responsive" src="img/about-us__bg--min.jpg" alt="О нас">
+            </div>
+            <div class="col-sm-8">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque hic unde, esse id, saepe illo dolore assumenda veritatis, cumque, placeat aperiam inventore sapiente nihil. Molestias, saepe, consequuntur! Debitis, commodi recusandae odio eveniet asperiores deserunt, expedita soluta cum dolor vel earum amet minus nobis esse eaque accusamus error laudantium quasi, neque?</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, dolorum, a cupiditate atque nihil necessitatibus officia doloribus ea sunt dicta. Magni tempore non, blanditiis illum esse magnam, possimus rem maiores.</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, molestias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis laborum eum culpa odio sit esse perspiciatis, ex dolores ullam minima.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--/about-us-->
+   <!--we-do-->
+   <section class="we-do">
+      <div class="container">
+         <div class="row">
+            <h2 class="section-title">Что мы еще делаем?</h2>
+            <div class="we-do__block  col-sm-7 col-lg-4 clearfix">
+               <p class="we-do__block-title ">Типы работ:</p>
+               <ul class="we-do__block-type-list">
+                  <li>Lorem ipsum.</li>
+                  <li>Provident, tempore?</li>
+                  <li>Perspiciatis, cupiditate.</li>
+                  <li>Excepturi, quisquam.</li>
+                  <li>Iure, voluptates!</li>
+                  <li>Vero, excepturi.</li>
+                  <li>Quaerat, dignissimos.</li>
+                  <li>Lorem ipsum.</li>
+                  <li>Provident, tempore?</li>
+                  <li>Perspiciatis, cupiditate.</li>
+                  <li>Excepturi, quisquam.</li>
+                  <li>Iure, voluptates!</li>
+                  <li>Vero, excepturi.</li>
+                  <li>Quaerat, dignissimos.</li>
+                  <li>Lorem ipsum.</li>
+                  <li>Provident, tempore?</li>
+                  <li>Perspiciatis, cupiditate.</li>
+                  <li>Excepturi, quisquam.</li>
+                  <li>Iure, voluptates!</li>
+                  <li>Vero, excepturi.</li>
+                  <li>Quaerat, dignissimos.</li>
+               </ul>
+            </div>
+            <div class="we-do__block col-sm-5  tex col-lg-3 col-lg-push-5">
+               <div class="col-xs-6 col-sm-12">
+                  <p class="we-do__block-title">Популярные области:</p>
+                  <ul class="top-list">
+                     <li>Математические дисциплины</li>
+                     <li>Естественные дисциплины</li>
+                     <li>Технические дисциплины</li>
+                     <li>Программирование</li>
+                     <li>Гуманитарные дисциплины</li>
+                     <li>Математические дисциплины</li>
+                     <li>Естественные дисциплины</li>
+                     <li>Технические дисциплины</li>
+                     <li>Программирование</li>
+                     <li>Гуманитарные дисциплины</li>
+                  </ul>
+               </div>
+               <div class="col-xs-6 col-sm-12">
+                  <p class="we-do__block-title">Популярные предметы:</p>
+                  <ul class="top-list">
+                     <li>Алгебра</li>
+                     <li>Аналитическая геометрия</li>
+                     <li>Векторная алгебра</li>
+                     <li>Высшая математика</li>
+                     <li>Вычислительная математика</li>
+                     <li>Геометрия</li>
+                     <li>Дискретная</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="we-do__block diagram col-sm-12 col-lg-pull-3 col-lg-5">
+               <div class="col-xs-6 hidden-xs col-lg-12">
+                  <p class="diagram--type">Топ 5 типов работ</p>
+                  <ul class="top-list">
+                     <li class="icon-square--blue">Курсовая</li>
+                     <li class="icon-square--brown">Дипломная работа</li>
+                     <li class="icon-square--green">Реферат</li>
+                     <li class="icon-square--yellow">Глава диплома</li>
+                     <li class="icon-square--pink">Прочие</li>
+                  </ul>
+               </div>
+               <div class="col-xs-6 hidden-xs col-lg-12">
+                  <p class="diagram--area">Топ 5 популярных областей</p>
+                  <ul class="top-list">
+                     <li class="icon-square--blue">Работа с текстом</li>
+                     <li class="icon-square--brown">Гуманитарные дисциплины</li>
+                     <li class="icon-square--green">Экономические дисциплины</li>
+                     <li class="icon-square--yellow">Технические дисциплины</li>
+                     <li class="icon-square--pink">Прочие</li>
+                  </ul>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   <!--/we-do-->
+   <!--workflow-->
+   <section class="workflow">
+      <div class="container">
+         <div class="row">
+            <h2 class="section-title">Как мы работаем</h2>
+            <div class="workflow__block  col-sm-3">
+               <img src="img/workflow/icon-workflow1.png" alt="">
+               <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="workflow__block  col-sm-3">
+               <img src="img/workflow/icon-workflow2.png" alt="">
+               <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="workflow__block  col-sm-3">
+               <img src="img/workflow/icon-workflow3.png" alt="">
+               <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="workflow__block  col-sm-3">
+               <img src="img/workflow/icon-workflow4.png" alt="">
+               <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="row">
+               <div class="col-sm-8 col-sm-offset-2">
+                  <div class="workflow__block  col-sm-4">
+                     <img src="img/workflow/icon-workflow5.png" alt="">
+                     <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div class="workflow__block  col-sm-4">
+                     <img src="img/workflow/icon-workflow6.png" alt="">
+                     <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div class="workflow__block  col-sm-4">
+                     <img src="img/workflow/icon-workflow7.png" alt="">
+                     <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+               </div>
+            </div>
+            <p class="workflow__answer">Ответим на любые ваши вопросы.</p>
+            <button class="workflow__button-order">Оставить заявку</button>
+         </div>
+      </div>
+   </section>
+   <!--/workflow-->
+   <!--map-->
+   <div class="map" id="map">
+      <p class="map__decoration">География работ</p>
+   </div>
+   <!--map-->
+
+   <!--universities-->
+   <section class="universities">
+      <div class="container">
+         <div class="row">
+            <h3>Вузы, в которых сдавали наши работы</h3>
+            <div class="col-md-6">
+               <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicingconsectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicingconsectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicingconsectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicingconsectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicingconsectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicingconsectetur adipisicing.</li>
+               </ul>
+            </div>
+            <div class="col-md-6">
+               <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing sit amet, consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing sit amet, consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing sit amet, consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicingsit amet, consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing sit amet, consectetur adipisicing.</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--/universities-->
+
+   <!--reviews-->
+   <section class="reviews">
+      <div class="container">
+         <div class="row">
+            <h2 class="section-title">Отзывы и кейсы</h2>
+         </div>
+         <article class="reviews__block">
+            <div class="reviews__block-img-wrap">
+               <img src="img/reviews/author-img-1.jpg" alt="Виктория">
+            </div>
+            <div class="reviews__block-text-wrap">
+               <header>
+                  <p class="reviews__date">9.02.16</p>
+                  <p class="reviews__author">Виктория Махрова, г. Санкт-Петербург</p>
+               </header>
+               <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum esse aliquid pariatur, temporibus exercitationem quia facere ipsam provident minima recusandae eaque at, ea reprehenderit, error expedita animi laudantium! Rem dicta ipsam et culpa modi tempora beatae eaque minus fugiat necessitatibus, eum ullam hic aliquid, earum accusamus tenetur facilis est, quae.</p>
+
+            </div>
+         </article>
+         <article class="reviews__block">
+            <div class="reviews__block-img-wrap">
+               <img src="img/reviews/author-img-2.jpg" alt="Вадим">
+            </div>
+            <div class="reviews__block-text-wrap">
+               <header>
+                  <p class="reviews__date">9.02.16</p>
+                  <p class="reviews__author">Вадим Сергеев, г. Великий Новгород</p>
+               </header>
+               <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum esse aliquid pariatur, temporibus exercitationem quia facere ipsam provident minima recusandae eaque at, ea reprehenderit, error expedita animi laudantium! Rem dicta ipsam et culpa modi tempora beatae eaque minus fugiat necessitatibus, eum ullam hic aliquid, earum accusamus tenetur facilis est, quae.</p>
+            </div>
+         </article>
+         <article class="reviews__block">
+            <div class="reviews__block-img-wrap">
+               <img src="img/reviews/author-img-3.jpg" alt="Павел">
+            </div>
+            <div class="reviews__block-text-wrap">
+               <header>
+                  <p class="reviews__date">9.02.16</p>
+                  <p class="reviews__author"> Павел Рыков, г. Москва</p>
+               </header>
+               <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum esse aliquid pariatur, temporibus exercitationem quia facere ipsam provident minima recusandae eaque at, ea reprehenderit, error expedita animi laudantium! Rem dicta ipsam et culpa modi tempora beatae eaque minus fugiat necessitatibus, eum ullam hic aliquid, earum accusamus tenetur facilis est, quae.</p>
+            </div>
+         </article>
+         <article class="reviews__block">
+            <div class="reviews__block-img-wrap">
+               <img src="img/reviews/author-img-1.jpg" alt="Виктория">
+            </div>
+            <div class="reviews__block-text-wrap">
+               <header>
+                  <p class="reviews__date">9.02.16</p>
+                  <p class="reviews__author">Виктория Махрова, г. Санкт-Петербург</p>
+               </header>
+               <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum esse aliquid pariatur, temporibus exercitationem quia facere ipsam provident minima recusandae eaque at, ea reprehenderit, error expedita animi laudantium! Rem dicta ipsam et culpa modi tempora beatae eaque minus fugiat necessitatibus, eum ullam hic aliquid, earum accusamus tenetur facilis est, quae.</p>
+
+            </div>
+         </article>
+         <article class="reviews__block">
+            <div class="reviews__block-img-wrap">
+               <img src="img/reviews/author-img-2.jpg" alt="Вадим">
+            </div>
+            <div class="reviews__block-text-wrap">
+               <header>
+                  <p class="reviews__date">9.02.16</p>
+                  <p class="reviews__author">Вадим Сергеев, г. Великий Новгород</p>
+               </header>
+               <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum esse aliquid pariatur, temporibus exercitationem quia facere ipsam provident minima recusandae eaque at, ea reprehenderit, error expedita animi laudantium! Rem dicta ipsam et culpa modi tempora beatae eaque minus fugiat necessitatibus, eum ullam hic aliquid, earum accusamus tenetur facilis est, quae.</p>
+            </div>
+         </article>
+         <article class="reviews__block">
+            <div class="reviews__block-img-wrap">
+               <img src="img/reviews/author-img-3.jpg" alt="Павел">
+            </div>
+            <div class="reviews__block-text-wrap">
+               <header>
+                  <p class="reviews__date">9.02.16</p>
+                  <p class="reviews__author"> Павел Рыков, г. Москва</p>
+               </header>
+               <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum esse aliquid pariatur, temporibus exercitationem quia facere ipsam provident minima recusandae eaque at, ea reprehenderit, error expedita animi laudantium! Rem dicta ipsam et culpa modi tempora beatae eaque minus fugiat necessitatibus, eum ullam hic aliquid, earum accusamus tenetur facilis est, quae.</p>
+            </div>
+         </article>
+      </div>
+   </section>
+   <!--/reviews-->
+
+   <!--main-footer-->
+   <footer class="main-footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-8 col-md-6">
+               <nav class="border-right col-sm-6  col-lg-4">
+                  <ul>
+                     <li><a href="#">Наши работы</a></li>
+                     <li><a href="#">Гарантии</a></li>
+                     <li><a href="#">Отзывы</a></li>
+                     <li><a href="#">Статьи</a></li>
+                     <li><a href="#">Авторам</a></li>
+                     <li><a href="#">Контакты</a></li>
+                  </ul>
+               </nav>
+               <nav class="col-sm-6 col-lg-6">
+                  <ul>
+                     <li><a href="#">Дипломная работа</a></li>
+                     <li><a href="#">Диплом МВА</a></li>
+                     <li><a href="#">Магистерская диссертация</a></li>
+                     <li><a href="#">Курсовая работа</a></li>
+                     <li><a href="#">Реферат</a></li>
+                     <li><a href="#">Отчет по практике</a></li>
+                     <li><a href="#">Контрольная работа</a></li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="col-sm-4 col-md-6">
+               <div class="main-footer__contacts   col-sm-12 col-md-push-6">
+                  <a class="main-footer__contacts-phone" href="tel:88127163027">+7 (812) 716-30-27</a>
+                  <a class="main-footer__contacts-mail" href="mailto:diplom812@yandex.ru">diplom812@yandex.ru</a>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="main-footer__copyright col-xs-12">
+               <p>Copyright &copy; 2008-2016.
+                  <br>Все права защищены. Любое копирование материала запрещено</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!--/main-footer-->
+   <!-- jQuery-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <!-- Include  plugins -->
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/chosen.jquery.js"></script>
+   <script src="js/settings.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+/*MODAL-Callback*/
+
+.modal-callback {
+   color: @font-color__lighten;
+   text-align: center;
+   position: fixed;
+   z-index: 9999;
+   &__form {
+      background-image: url(../img/jambotron/form-bg.png);
+      background-size: 100% 100%;
+      max-width: 354px;
+      height: auto;
+      margin-top: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 30px 30px 70px 30px;
+      input {
+         width: 100%;
+         font-size: 14px;
+         font-family: @font-name;
+         color: @font-color__darken;
+         padding: 10px;
+         margin-bottom: 15px;
+         border-radius: 2px;
+         border: none;
+      }
+   }
+   &__title {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-family: @font-name-accent--R;
+      span {
+         font-size: 32px;
+      }
+   }
+   &__button {
+      color: @font-color__lighten;
+      font-size: 25px;
+      background: url(../img/modal__callback__icon-mail.png), url(../img/jambotron/callback-button.png);
+      width: 290px;
+      height: 60px;
+      background-repeat: no-repeat;
+      background-position: 30px 23px, 0 0;
+      border: none;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+      margin-top: 25px;
+      padding-left: 25px;
+      margin-left: auto;
+      margin-right: auto;
+      &:hover {
+         background: url(../img/modal__callback__icon-mail.png), url(../img/jambotron/callback-button--hover.png);
+         background-position: 50px 23px, 0 0;
+         background-repeat: no-repeat;
+      }
+   }
+   .modal-body {
+      padding: 0;
+   }
+}
+
+/*end MODAL-Callback*/

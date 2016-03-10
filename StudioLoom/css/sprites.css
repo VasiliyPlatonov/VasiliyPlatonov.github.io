@@ -1,0 +1,89 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-address {
+  background-image: url(../img/spritesheet.png);
+  background-position: -142px -55px;
+  width: 9px;
+  height: 13px;
+}
+.icon-email {
+  background-image: url(../img/spritesheet.png);
+  background-position: -142px -79px;
+  width: 12px;
+  height: 8px;
+}
+.icon-phone {
+  background-image: url(../img/spritesheet.png);
+  background-position: -142px -68px;
+  width: 10px;
+  height: 11px;
+}
+.icon-main-logo {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -55px;
+  width: 52px;
+  height: 52px;
+}
+.icon-process-award {
+  background-image: url(../img/spritesheet.png);
+  background-position: -82px -55px;
+  width: 28px;
+  height: 48px;
+}
+.icon-process__idea {
+  background-image: url(../img/spritesheet.png);
+  background-position: -112px -55px;
+  width: 30px;
+  height: 48px;
+}
+.icon-process__magic-touch {
+  background-image: url(../img/spritesheet.png);
+  background-position: -160px -56px;
+  width: 36px;
+  height: 48px;
+}
+.icon-process__rapid-solution {
+  background-image: url(../img/spritesheet.png);
+  background-position: -52px -55px;
+  width: 30px;
+  height: 48px;
+}
+.icon-motion-video {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px 0px;
+  width: 56px;
+  height: 55px;
+}
+.icon-package-dsgn {
+  background-image: url(../img/spritesheet.png);
+  background-position: -112px 0px;
+  width: 48px;
+  height: 55px;
+}
+.icon-print-dsgn {
+  background-image: url(../img/spritesheet.png);
+  background-position: -56px 0px;
+  width: 56px;
+  height: 54px;
+}
+.icon-time-mng {
+  background-image: url(../img/spritesheet.png);
+  background-position: -160px 0px;
+  width: 44px;
+  height: 56px;
+}
+.icon-sliders-arrow {
+  background-image: url(../img/spritesheet.png);
+  background-position: -196px -56px;
+  width: 8px;
+  height: 13px;
+}

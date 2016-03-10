@@ -1,0 +1,41 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-work-types__MBA {
+  background-image: url(../img/jambotron/work-types/work-types__spritesheet.png);
+  background-position: 0px 0px;
+  width: 82px;
+  height: 82px;
+}
+.icon-work-types__control {
+  background-image: url(../img/jambotron/work-types/work-types__spritesheet.png);
+  background-position: -82px 0px;
+  width: 82px;
+  height: 82px;
+}
+.icon-work-types__course {
+  background-image: url(../img/jambotron/work-types/work-types__spritesheet.png);
+  background-position: 0px -82px;
+  width: 82px;
+  height: 82px;
+}
+.icon-work-types__diplom {
+  background-image: url(../img/jambotron/work-types/work-types__spritesheet.png);
+  background-position: -82px -82px;
+  width: 82px;
+  height: 82px;
+}
+.icon-work-types__referat {
+  background-image: url(../img/jambotron/work-types/work-types__spritesheet.png);
+  background-position: -164px 0px;
+  width: 82px;
+  height: 82px;
+}
