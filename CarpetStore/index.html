@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Магазин ковров в Сургуте</title>
+   <link rel="stylesheet" href="css/owl.carousel.css">
+   <link rel="stylesheet" href="css/owl.theme.css">
+   <link rel="stylesheet" href="css/jquery.fancybox.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="body">
+   <!--HEADER-->
+   <header class="main-header">
+      <div class="main-header__bar-wrap container">
+         <div class="row">
+            <a href="#" class="main-header__brand  col-xs-12 col-sm-4 col-sm-push-1 col-md-3 col-md-push-1">Магазин ковров в Сургуте</a>
+            <div class="main-header__contacts-wrap  col-xs-12 col-sm-5 col-md-4 pull-right">
+               <div class="main-header__contacts">
+                  <div class="main-header__phone-wrap">
+                     <i class="icon-main-header__phone"></i>
+                     <a href="tel:672102">67-21-02,</a>
+                     <a href="tel:89218172101">8 (912) 817-21-02</a>
+                  </div>
+               </div>
+               <div class="main-header__contacts">
+                  <i class="icon-main-header__location"></i>
+                  <a href="#map__img" class="main-header__address">г. Сургут, ул. Пушкина 9</a>
+               </div>
+               <!--todo сделать ссылку на карту внизу!-->
+            </div>
+         </div>
+      </div>
+      <div class="main-header__screen">
+         <div class="main-header__screen-overlay">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 col-lg-push-2">
+                     <h1>Ковры вашей мечты!</h1>
+                     <h2>Элитные и высококачественные ковры</h2>
+                     <div class="main-header__delivery">
+                        <i class="icon-main-header__delivery"></i>
+                        <p>Доставка по Сургуту и оверлок в подарок</p>
+                     </div>
+                     <button class="main-header__button">Получить скидку</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!--/HEADER-->
+   <!--ABOUT-->
+   <section class="about">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 col-lg-push-2 col-md-10 col-md-push-1">
+               <h3>О нас</h3>
+               <p>В нашем магазине вы найдете множество элитных ковров любых цветов, размеров и дизайнов
+                  <br> Если вы хотите гормонично дополнить свой интерьер, вы найдете свой идефльный коер у нас.
+                  <br> Мы специализируемся на самой качественной продукции, с нами надежно и приятно работать.
+                  <br> У нас есть предложение для каждого.
+               </p>
+               <p>Ковры выбираются как глазами так и руками, приходите в наш магазин и ощутите качество
+                  <br> ковра,так же мы поможем выбрать вам подходящий ковёр под ваш интерьер.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- /ABOUT-->
+   <!--VARIETY-->
+   <section class="variety">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 col-lg-push-2">
+               <h3>Огромный выбор ковров в наличии</h3>
+               <p class="variety__title">У нас вы найдете:</p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-12">
+               <div id="owl" class="owl-carousel">
+                  <!--
+                  <div class="item"><img src="img/slider/slide1.jpg" alt="Ковры для любых помещений"></div>
+                  <div class="item"><img src="img/slider/slide2.jpg" alt="Ковры прихожую"></div>
+                  <div class="item"><img src="img/slider/slide3.jpg" alt="Ковры в спальню"></div>
+                  <div class="item"><img src="img/slider/slide4.jpg" alt="Ковры в гостинную"></div>
+                  <div class="item"><img src="img/slider/slide5.jpg" alt="Ковры в ванную"></div>
+                  <div class="item"><img src="img/slider/slide6.jpg" alt="Ковры в детскую"></div>
+-->
+                  <div class="variety__slider-img-wrap">
+                     <p class="variety__slider-plate--big">Ковры для любых<br> помещений</p>
+                     <img src="img/slider/slide1.jpg" alt="Ковры для любых помещений">
+                     <!--                 <p class="variety__slider-plate--min"></p>-->
+                  </div>
+                  <div class="variety__slider-img-wrap">
+                     <p class="variety__slider-plate--big">Ковры для любых<br> помещений</p>
+                     <img src="img/slider/slide2.jpg" alt="В прихожую">
+                     <p class="variety__slider-plate--min">В прихожую</p>
+                  </div>
+                  <div class="variety__slider-img-wrap">
+                     <p class="variety__slider-plate--big">Ковры для любых<br> помещений</p>
+                     <img src="img/slider/slide3.jpg" alt="В спальню">
+                     <p class="variety__slider-plate--min">В спальню</p>
+                  </div>
+                  <div class="variety__slider-img-wrap">
+                     <p class="variety__slider-plate--big">Ковры для любых<br> помещений</p>
+                     <img src="img/slider/slide4.jpg" alt="В гостиную">
+                     <p class="variety__slider-plate--min">В гостиную</p>
+                  </div>
+                  <div class="variety__slider-img-wrap">
+                     <p class="variety__slider-plate--big">Ковры для любых<br> помещений</p>
+                     <img src="img/slider/slide5(2).jpg" alt="В ванную">
+                     <p class="variety__slider-plate--min">В ванную</p>
+                  </div>
+                  <div class="variety__slider-img-wrap">
+                     <p class="variety__slider-plate--big">Ковры для любых<br> помещений</p>
+                     <img src="img/slider/slide6.jpg" alt="В детскую">
+                     <p class="variety__slider-plate--min">В детскую</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row materials">
+            <div class="col-xs-12">
+               <p class="materials__title">Ковры из разных материалов:</p>
+            </div>
+            <div class="col-xs-12">
+               <div class="col-xs-12 col-md-6">
+                  <div class="materials__block col-xs-12 col-sm-6">
+                     <p>Шерсть</p>
+                     <div class="materials__block-img-wrap">
+                        <img src="img/materials/materials__wool.jpg" alt="Шерсть">
+                     </div>
+                  </div>
+                  <div class="materials__block ">
+                     <p>Шелк</p>
+                     <div class="materials__block-img-wrap">
+                        <img src="img/materials/materials__silk.jpg" alt="Шелк">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xs-12 col-md-6">
+                  <div class="materials__block col-xs-12 col-sm-6">
+                     <p>Вискоза</p>
+                     <div class="materials__block-img-wrap">
+                        <img src="img/materials/materials__viscose.jpg" alt="Вискоза">
+                     </div>
+                  </div>
+                  <div class="materials__block materials__block--last ">
+                     <p>Хлопок</p>
+                     <div class="materials__block-img-wrap">
+                        <img src="img/materials/materials__cotton.jpg" alt="Хлопок">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-10 col-md-push-1">
+               <div class="col-xs-12 col-md-6">
+                  <div class="materials__block  col-xs-12 col-sm-6">
+                     <p>Джут</p>
+                     <div class="materials__block-img-wrap">
+                        <img src="img/materials/materials__jute.jpg" alt="Джут">
+                     </div>
+                  </div>
+                  <div class="materials__block ">
+                     <p>Полиамид</p>
+                     <div class="materials__block-img-wrap">
+                        <img src="img/materials/materials__polyamide.jpg" alt="Полиамид">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xs-12 col-md-6">
+                  <div class="materials__block  col-xs-12 col-sm-6">
+                     <p>Полипропилен</p>
+                     <div class="materials__block-img-wrap">
+                        <img src="img/materials/materials__polypropylene.jpg" alt="Полипропилен">
+                     </div>
+                  </div>
+                  <div class="materials__block  materials__block--last ">
+                     <p>Полипропилен</p>
+                     <div class="materials__block-img-wrap">
+                        <img src="img/materials/materials__polypropylene2.jpg" alt="Полипропилен">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- /VARIETY-->
+   <!--FORMS-->
+   <section class="forms">
+      <div class="container">
+         <div class="row">
+            <p class="forms__title">Ковры разных форм:</p>
+            <div class="forms__block  col-xs-4 col-sm-4 col-md-2">
+               <p>Квадрат</p>
+               <div class="forms__block-img-wrap"><img src="img/formAndSize/form__square.png" alt="Квадрат"></div>
+            </div>
+            <div class="forms__block  col-xs-4 col-sm-4 col-md-2">
+               <p>Прямоугольник</p>
+               <div class="forms__block-img-wrap"><img src="img/formAndSize/form__rectangle.png" alt="Прямоугольник"></div>
+            </div>
+            <div class="forms__block  col-xs-4 col-sm-4 col-md-2">
+               <p>Дорожки</p>
+               <div class="forms__block-img-wrap"><img src="img/formAndSize/form__tracks.png" alt="Дорожки"></div>
+            </div>
+            <div class="forms__block  col-xs-4 col-sm-4 col-md-2">
+               <p>Круг</p>
+               <div class="forms__block-img-wrap"><img src="img/formAndSize/form__circle.png" alt="Круг"></div>
+            </div>
+            <div class="forms__block  col-xs-4 col-sm-4 col-md-2">
+               <p>Овал</p>
+               <div class="forms__block-img-wrap"><img src="img/formAndSize/form__oval.png" alt="Овал"></div>
+            </div>
+            <div class="forms__block  col-xs-4 col-sm-4 col-md-2">
+               <p>Индивидуальный</p>
+               <div class="forms__block-img-wrap"><img src="img/formAndSize/form__individual.png" alt="Индивидуальный"></div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--/ FORMS-->
+   <!--SIZE-->
+   <section class="size">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-10 col-sm-push-1">
+               <p class="size__title">Ковры различных размеров:</p>
+               <div class="size__block  col-sm-4">
+                  <!--                        <div class="icon-size-min"></div>-->
+                  <div class="size__block-img-wrap">
+                     <img src="img/formAndSize/size-min.png" alt="Маленький"></div>
+                  <p><span>Маленький</span>(прикроватный)</p>
+               </div>
+               <div class="size__block  col-sm-4">
+                  <!--                        <div class="icon-size-medium"></div>-->
+                  <div class="size__block-img-wrap">
+                     <img src="img/formAndSize/size-medium.png" alt="Средний"></div>
+                  <p><span>Средний</span>(часть комнаты)</p>
+               </div>
+               <div class="size__block  col-sm-4">
+                  <!--                        <div class="icon-size-max"></div>-->
+                  <div class="size__block-img-wrap">
+                     <img src="img/formAndSize/size-max.png" alt="Большой"></div>
+                  <p><span>Большой</span>(на всю комнату)</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-xs-12">
+         <div class="row">
+            <div class="size__bg2"></div>
+         </div>
+      </div>
+   </section>
+
+   <!--/SIZE-->
+   <!--MANUFACTURER-->
+   <section class="manufacturer">
+      <div class="container">
+         <div class="row">
+            <p class="manufacturer__title">Ковры из разных стран производителей:</p>
+            <div class="col-md-7">
+               <div class=" col-xs-12 col-sm-6">
+                  <div class="manufacturer__block">
+                     <p>Бельгия</p>
+                     <div class="manufacturer__block-img-wrap">
+                        <img src="img/manufacturer/Belgium.jpg" alt="Бельгия">
+                     </div>
+                  </div>
+                  <div class="manufacturer__block">
+                     <p>Россия</p>
+                     <div class="manufacturer__block-img-wrap">
+                        <img src="img/manufacturer/Russia.jpg" alt="Россия">
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-xs-12 col-sm-6">
+                  <div class="manufacturer__block">
+                     <p>Египет</p>
+                     <div class="manufacturer__block-img-wrap">
+                        <img src="img/manufacturer/Egypt.jpg" alt="Египет">
+                     </div>
+                  </div>
+                  <div class="manufacturer__block">
+                     <p>Китай</p>
+                     <div class="manufacturer__block-img-wrap">
+                        <img src="img/manufacturer/China.jpg" alt="Китай">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-5">
+               <div class="col-xs-12 col-sm-8">
+                  <div class="manufacturer__block">
+                     <p>Турция</p>
+                     <div class="manufacturer__block-img-wrap">
+                        <img src="img/manufacturer/Turkey.jpg" alt="Турция">
+                     </div>
+                  </div>
+                  <div class="manufacturer__block">
+                     <p>Молдова</p>
+                     <div class="manufacturer__block-img-wrap">
+                        <img src="img/manufacturer/Moldova.jpg" alt="Молдова">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xs-12 col-sm-4">
+                  <div class="manufacturer__block manufacturer__block--last">
+                     <p>Беларусь</p>
+                     <div class="manufacturer__block-img-wrap">
+                        <img src="img/manufacturer/Belarus.jpg" alt="Беларусь">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--/MANUFACTURER-->
+
+   <!--COLORS-->
+   <section class="colors">
+      <div class="container">
+         <div class="row">
+            <p class="colors__title">Ковры различных вариантов окраса:</p>
+            <div class="col-xs-12">
+               <div class="colors__block  col-sm-4">
+                  <p>С ярким рисунком</p>
+                  <div class="colors__block-img-wrap">
+                     <img src="img/colors/colors__1--circle.jpg" alt="С ярким рисунком"> </div>
+               </div>
+               <div class="colors__block  col-sm-4">
+                  <p>Однотонные</p>
+                  <div class="colors__block-img-wrap">
+                     <img src="img/colors/colors__2--circel.jpg" alt="Однотонные"> </div>
+               </div>
+               <div class="colors__block  col-sm-4">
+                  <p>С узором</p>
+                  <div class="colors__block-img-wrap">
+                     <img src="img/colors/colors__3--circle.jpg" alt="С узором"> </div>
+               </div>
+            </div>
+            <div class="col-xs-12">
+               <p class="colors__caption">На сайте предосавлены не все товары,
+                  <br>приходите в наш магазин и точно найдете нужный вам ковёр.</p>
+            </div>
+
+         </div>
+      </div>
+
+   </section>
+   <!--/COLORS-->
+   <!--SAMPLE-->
+   <section class="sample">
+      <div class="container">
+         <div class="row">
+            <h3>Примеры наших ковров</h3>
+         </div>
+         <div class="row">
+            <div class="sample__block  col-sm-6">
+               <p class="sample__title">Колекция Непал</p>
+               <p class="sample__caption">Часто используются в качестве прикроватных ковриков, ковриков в коридорах, а также в качестве дополнтельных деталей декора в масштабных помещениях. Ковры мальньких размеров оригенально и уместно смотрятся в детских комнатах, обычно для таких помещений выбирают Бельгийске ковры, Молдавские ковры или ковры Турецкого производства, отличающиеся высоким качеством и хорошей плотностью плетения. Молдавские ковры к тому же отличаются самым широким размерным рядом, в котором можно найти и миниатюрные коврики, и стандартные ковры, и ковры большого размера.</p>
+            </div>
+            <div class="sample__block col-sm-6">
+               <div class="sample__block-img-wrap">
+                  <a href="img/sample/img-big/nepal-1.jpg" class="gallery" rel="nepal" title="Коллекция Непал">
+                     <img src="img/sample/img-small/nepal-1.jpg" alt="">
+                  </a>
+               </div>
+               <div class="sample__block-img-wrap">
+                  <a href="img/sample/img-big/nepal-2.jpg" class="gallery" rel="nepal" title="Коллекция Непал">
+                     <img src="img/sample/img-small/nepal-2.jpg" alt="">
+                  </a>
+               </div>
+               <div class="sample__block-img-wrap">
+                  <a href="img/sample/img-big/nepal-3.jpg" class="gallery" rel="nepal" title="Коллекция Непал">
+                     <img src="img/sample/img-small/nepal-3.jpg" alt="">
+                  </a>
+               </div>
+               <div class="sample__block-img-wrap">
+                  <a href="img/sample/img-big/nepal-4.jpg" class="gallery" rel="nepal" title="Коллекция Непал">
+                     <img src="img/sample/img-small/nepal-4.jpg" alt="">
+                  </a>
+               </div>
+               <div class="sample__block-img-wrap">
+                  <a href="img/sample/img-big/nepal-5.jpg" class="gallery" rel="nepal" title="Коллекция Непал">
+                     <img src="img/sample/img-small/nepal-5.jpg" alt="">
+                  </a>
+               </div>
+               <div class="sample__block-img-wrap">
+                  <a href="img/sample/img-big/nepal-6.jpg" class="gallery" rel="nepal" title="Коллекция Непал">
+                     <img src="img/sample/img-small/nepal-6.jpg" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="sample__block  col-sm-6  col-sm-push-6">
+               <p class="sample__title">Колекция Персиан</p>
+               <p class="sample__caption">Часто используются в качестве прикроватных ковриков, ковриков в коридорах, а также в качестве дополнтельных деталей декора в масштабных помещениях. Ковры мальньких размеров оригенально и уместно смотрятся в детских комнатах, обычно для таких помещений выбирают Бельгийске ковры, Молдавские ковры или ковры Турецкого производства, отличающиеся высоким качеством и хорошей плотностью плетения. Молдавские ковры к тому же отличаются самым широким размерным рядом, в котором можно найти и миниатюрные коврики, и стандартные ковры, и ковры большого размера.</p>
+            </div>
+            <div class="sample__block col-sm-6 col-sm-pull-6">
+               <div class="sample__block-img-wrap">
+                  <a href="img/sample/img-big/persian-1.jpg" class="gallery" rel="persian" title="Коллекция Персиан">
+                     <img src="img/sample/img-small/persian-1.jpg" alt="">
+                  </a>
+               </div>
+               <div class="sample__block-img-wrap">
+                  <a href="img/sample/img-big/persian-2.jpg" class="gallery" rel="persian" title="Коллекция Персиан">
+                     <img src="img/sample/img-small/persian-2.jpg" alt="">
+                  </a>
+               </div>
+               <div class="sample__block-img-wrap">
+                  <a href="img/sample/img-big/persian-3.jpg" class="gallery" rel="persian" title="Коллекция Персиан">
+                     <img src="img/sample/img-small/persian-3.jpg" alt="">
+                  </a>
+               </div>
+               <div class="sample__block-img-wrap">
+                  <a href="img/sample/img-big/persian-4.jpg" class="gallery" rel="persian" title="Коллекция Персиан">
+                     <img src="img/sample/img-small/persian-4.jpg" alt="">
+                  </a>
+               </div>
+               <div class="sample__block-img-wrap">
+                  <a href="img/sample/img-big/persian-5.jpg" class="gallery" rel="persian" title="Коллекция Персиан">
+                     <img src="img/sample/img-small/persian-5.jpg" alt="">
+                  </a>
+               </div>
+               <div class="sample__block-img-wrap">
+                  <a href="img/sample/img-big/persian-6.jpg" class="gallery" rel="persian" title="Коллекция Персиан">
+                     <img src="img/sample/img-small/persian-6.jpg" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--/SAMPLE-->
+   <!--DISCOUNT-->
+   <section class="discount">
+      <div class="discount__overlay">
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-10 col-xs-push-1">
+                  <h3>Получить скидку 3%</h3>
+                  <form action="#">
+                     <input class="discount__input" type="text" id="client_phone" placeholder="Ваш телефон" required>
+                     <input class="discount__button" type="submit" value="Отправить">
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--/DISCOUNT-->
+   <!--map-->
+   <section class="map">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               <div class="row">
+                  <div class="map__contacts">
+                     <div class="map__phone-wrap">
+                        <i class="icon-map__phone"></i>
+                        <a href="tel:672102"><span>67-21-02,</span></a>
+                        <a href="tel:89218172101"><span>8 (912) 817-21-02</span></a>
+                        <i class="icon-map__location"></i>
+                     </div>
+                     <!--                  <div class="map__img" id="map__img"></div>-->
+                     <div><span>г. Сургут, ул. Пушкина 9</span></div>
+                  </div>
+                  <div class="map__img-map" id="map"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--/map-->
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <script src="js/jquery.fancybox.js"></script>
+   <script src="js/jquery.fancybox-media.js"></script>
+   <script src="js/owl.carousel.js"></script>
+   <script src="js/settings.js"></script>
+
+
+</body>
+
+</html>
