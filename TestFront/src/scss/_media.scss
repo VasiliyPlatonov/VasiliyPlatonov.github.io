@@ -1,0 +1,210 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .container {
+        max-width: 720px + $container-padding * 2;
+    }
+
+    .main-header {
+        padding-bottom: 12px;
+    }
+
+    .modal__body {
+        margin-top: 30%;
+    }
+    .prompt {
+      display: block;
+    }
+}
+@media only screen and (max-width : 630px) {
+    .authorization-menu {
+        text-align: right;
+
+        span {
+            display: none;
+        }
+
+        &__sign-up {}
+    }
+}
+/* Extra Small Devices, Phones, iPhone */
+@media only screen and (max-width : 480px) {
+    .visible-xs {
+        display: block;
+    }
+
+    .hidden-xs {
+        display: none;
+    }
+
+    .container {
+        padding-left: $container-padding--xs;
+        padding-right: $container-padding--xs;
+        max-width: 296px + $container-padding--xs * 2;
+    }
+
+    .main-header {
+        &__logo {
+            max-width: 108px;
+            height: 30px;
+            background-size: 100%;
+        }
+
+        &__authorization {
+            float: right;
+        }
+    }
+
+    .entry {
+        padding: 16px;
+
+        &__list-info {
+            @include clearfix;
+            float: none;
+            margin-top: 8px;
+            margin-bottom: 20px;
+
+            &-items {
+                margin-left: 0;
+                float: right;
+            }
+
+            &-date {
+                margin-left: 0;
+                margin-right: 16px;
+                float: left;
+            }
+        }
+
+        .entry__row-img {
+            margin-right: -3px;
+            margin-left: -3px;
+        }
+
+        .entry__img-link,
+        .entry__video-link {
+            // display: block;
+            margin-bottom: 6px;
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+    }
+
+    .authorization-menu {
+        padding-top: 10px;
+
+        span {
+            display: none;
+        }
+
+        &__login {
+            margin-left: 24px;
+        }
+
+        &__sign-up {
+            text-decoration: none;
+            vertical-align: middle;
+        }
+    }
+
+    .button-add {
+        float: left;
+        margin-bottom: 20px;
+        // margin-right: 16px;
+        width: 140px;
+    }
+
+    .button-share--big {
+        width: 140px;
+        margin-bottom: 20px;
+    }
+
+    .user-info {
+        &__img-wrap {
+            width: 38px;
+            height: 38px;
+        }
+
+        &__name {
+            font-size: em(16px);
+        }
+    }
+
+    .post-release {
+        font-size: em(18px);
+    }
+
+    .map {
+        &-wrap {
+            margin-right: 0;
+        }
+    }
+
+    .attach-file {
+        margin-right: 8px;
+        margin-left: 8px;
+        max-width: 43%;
+        overflow: hidden;
+
+        &__row {
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+    }
+
+    .xs-disp-block {
+        display: block;
+    }
+
+    .entry__specific {
+        margin-right: 20px;
+    }
+
+    .main-footer {
+        text-align: left;
+        font-size: em(11px);
+
+        &__copyright {
+            display: none;
+        }
+
+        &__nav {
+            li {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .prompt {
+        &__text {
+            font-size: em(11px);
+            display: none;
+        }
+
+        &__text--xs {
+            display: block;
+        }
+
+        &__button-dld {
+            width: 90px;
+            margin-right: 10px;
+        }
+
+        &__icon {
+            left: $container-padding--xs;
+        }
+    }
+}
+/* CSS правила для retina */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .display-normal {
+        display: none;
+    }
+
+    .display-retina {
+        display: inline;
+    }
+}

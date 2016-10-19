@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Centrallo</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <svg style="display: none;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+      <symbol id= "icon-fb" viewBox="0 0 8 16">
+          <g transform="translate(-827.000000, -104.000000)" fill-rule="evenodd">
+              <g transform="translate(820.000000, 101.000000)">
+                      <path d="M12.319786,19 L8.77253946,19 L8.77253946,10.9989902 L7,10.9989902 L7,8.24211058 L8.77253946,8.24211058 L8.77253946,6.58697299 C8.77253946,4.33804595 9.77287814,3 12.6167446,3 L14.9837431,3 L14.9837431,5.75788942 L13.504369,5.75788942 C12.397277,5.75788942 12.3241211,6.14314567 12.3241211,6.86215602 L12.3192441,8.24211058 L15,8.24211058 L14.6862426,10.9989902 L12.3192441,10.9989902 L12.3192441,19 L12.319786,19 Z"></path>
+              </g>
+          </g>
+      </symbol>
+
+      <symbol id="icon-tw" viewBox="0 0 16 13">
+          <g  fill-rule="evenodd">
+              <g transform="translate(-855.000000, -106.000000)" >
+                  <g  transform="translate(820.000000, 101.000000)">
+                      <g  transform="translate(32.000000, 0.000000)">
+                          <path d="M17.1151611,7.05525061 C17.7932148,6.64964611 18.3134942,6.00650007 18.5576686,5.24035823 C17.922815,5.61685685 17.2212831,5.88913766 16.4727945,6.03654485 C15.8755063,5.39809331 15.0218348,5 14.0770676,5 C12.2645419,5 10.7957387,6.46937744 10.7957387,8.28145313 C10.7957387,8.53871154 10.8229735,8.78939766 10.8793215,9.02881699 C8.15208077,8.89173769 5.73381464,7.58666763 4.11381112,5.59995667 C3.83113224,6.08630651 3.66960146,6.64964611 3.66960146,7.25054167 C3.66960146,8.38848765 4.24904619,9.39310992 5.12995246,9.9827387 C4.59182955,9.96583851 4.08563714,9.81655352 3.64236661,9.57243969 L3.64236661,9.61281236 C3.64236661,11.2033078 4.77308212,12.5299726 6.27663321,12.8304203 C6.00052826,12.9074101 5.71127546,12.945905 5.41075307,12.945905 C5.19944826,12.945905 4.99283911,12.9261881 4.79374303,12.8876932 C5.21071785,14.1908855 6.42313788,15.1410516 7.86001057,15.1664018 C6.73586899,16.0470894 5.32059635,16.5709952 3.78323649,16.5709952 C3.51840113,16.5709952 3.25638317,16.5569117 3,16.5259281 C4.45283794,17.4563773 6.1780243,18 8.03187181,18 C14.0704936,18 17.3706052,12.9994222 17.3706052,8.66264625 C17.3706052,8.51993355 17.3687269,8.37815976 17.362153,8.23826376 C18.0035804,7.77538639 18.5614251,7.19702441 19,6.53885599 C18.4111639,6.79987 17.7781886,6.97638307 17.1151611,7.05525061 Z"></path>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </symbol>
+
+      <symbol id="icon-vk" viewBox="0 0 20 11">
+       <g fill-rule="evenodd">
+        <g transform="translate(-885 -107)">
+         <g transform="translate(820 101)">
+          <g  transform="translate(64)">
+           <path d="m11.981 16.954s0.361-0.039 0.546-0.23c0.169-0.175 0.163-0.507 0.163-0.507s-0.022-1.545 0.722-1.773c0.734-0.225 1.676 1.494 2.675 2.155 0.755 0.5 1.329 0.391 1.329 0.391l2.671-0.036s1.397-0.083 0.735-1.142c-0.055-0.087-0.387-0.784-1.986-2.215-1.676-1.499-1.451-1.256 0.566-3.8488 1.229-1.5787 1.72-2.5425 1.567-2.9546-0.146-0.3942-1.05-0.2895-1.05-0.2895l-3.007 0.0179s-0.223-0.0293-0.388 0.066c-0.162 0.0934-0.266 0.3112-0.266 0.3112s-0.476 1.2213-1.111 2.2605c-1.339 2.1913-1.874 2.3073-2.093 2.1723-0.51-0.318-0.383-1.275-0.383-1.9554 0-2.1247 0.335-3.0102-0.65-3.2394-0.327-0.0764-0.567-0.1264-1.404-0.1348-1.0729-0.0104-1.9806 0.0037-2.4952 0.2461-0.3423 0.1613-0.6065 0.5215-0.4451 0.5423 0.1986 0.0254 0.6486 0.1169 0.8873 0.43 0.3081 0.4046 0.2973 1.3118 0.2973 1.3118s0.1771 2.5014-0.4137 2.8114c-0.405 0.213-0.9606-0.222-2.155-2.2107-0.6114-1.0185-1.0731-2.1445-1.0731-2.1445s-0.089-0.2103-0.2485-0.3235c-0.1927-0.1367-0.4617-0.1792-0.4617-0.1792l-2.8573 0.018s-0.4294 0.0113-0.5869 0.1914c-0.13989 0.1594-0.0108 0.4904-0.0108 0.4904s2.2372 5.0461 4.7707 7.5901c2.3232 2.331 4.96 2.178 4.96 2.178h1.196z"> </path>
+         </g>
+         </g>
+          </g>
+       </g>
+     </symbol>
+
+    <symbol id="icon-in" viewBox="0 0 15 15">
+                <g fill-rule="evenodd">
+            <g transform="translate(-920.000000, -103.000000)" >
+                <g  transform="translate(820.000000, 101.000000)">
+                    <g  transform="translate(96.000000, 0.000000)">
+                        <path d="M4.37835136,6.80983481 L7.30197554,6.80983481 L7.30197554,16.9990396 L4.37835136,16.9990396 L4.37835136,6.80983481 Z M5.7656397,5.53534383 L5.74447319,5.53534383 C4.6861477,5.53534383 4,4.75643488 4,3.77007299 C4,2.76354207 4.70643227,2 5.78592427,2 C6.86453434,2 7.52775165,2.76162121 7.54891816,3.7671917 C7.54891816,4.75355359 6.86453434,5.53534383 5.7656397,5.53534383 L5.7656397,5.53534383 Z M19,17 L15.6847954,17 L15.6847954,11.7262774 C15.6847954,10.3461391 15.1662159,9.4049174 14.0258702,9.4049174 C13.1536336,9.4049174 12.6685677,10.0397618 12.4427916,10.6534768 C12.3581256,10.8724549 12.3713547,11.1788321 12.3713547,11.4861698 L12.3713547,17 L9.08701787,17 C9.08701787,17 9.12935089,7.65885517 9.08701787,6.80983481 L12.3713547,6.80983481 L12.3713547,8.40895121 C12.565381,7.70975797 13.6148871,6.71187092 15.2896872,6.71187092 C17.3675329,6.71187092 19,8.17844794 19,11.3334614 L19,17 L19,17 Z"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+
+    <symbol id="icon-share" viewBox="0 0 16 16">
+        <g fill-rule="evenodd">
+            <g  transform="translate(-987.000000, -390.000000)" >
+                <g transform="translate(120.000000, 202.000000)">
+                    <path  d="M871.972928,195.869196 C871.990762,195.748717 872,195.625438 872,195.5 C872,195.417134 871.995968,195.33521 871.98809,195.254413 L878.863242,192.389767 C879.301802,192.769943 879.874035,193 880.5,193 C881.880712,193 883,191.880712 883,190.5 C883,189.119288 881.880712,188 880.5,188 C879.119288,188 878,189.119288 878,190.5 C878,190.527881 878.000456,190.555654 878.001362,190.583315 L871.000627,193.500288 C870.582689,193.186158 870.063084,193 869.5,193 C868.119288,193 867,194.119288 867,195.5 C867,196.880712 868.119288,198 869.5,198 C870.020298,198 870.503473,197.841057 870.90362,197.569078 L878.027072,201.130804 C878.009238,201.251283 878,201.374562 878,201.5 C878,202.880712 879.119288,204 880.5,204 C881.880712,204 883,202.880712 883,201.5 C883,200.119288 881.880712,199 880.5,199 C879.979702,199 879.496527,199.158943 879.09638,199.430922 L871.972928,195.869196 Z"></path>
+                </g>
+            </g>
+        </g>
+    </symbol>
+
+    <symbol id="icon-url"  viewBox="0 0 425.466 425.467">
+        <g>
+            <path d="M318.15,230.195l77.934-77.937c31.894-31.892,31.894-83.782-0.004-115.674l-12.66-12.66
+           c-31.893-31.896-83.78-31.896-115.674-0.004l-77.937,77.934c-17.588,17.588-25.457,41.264-23.646,64.311
+           c-23.045-1.813-46.722,6.056-64.308,23.647L23.92,267.748c-31.894,31.889-31.894,83.779,0,115.674l12.664,12.662
+           c31.893,31.893,83.783,31.893,115.674,0l77.935-77.936c17.592-17.59,25.459-41.266,23.647-64.309
+           C276.884,255.654,300.56,247.783,318.15,230.195z M202.653,290.605l-77.936,77.938c-16.705,16.703-43.889,16.703-60.59,0
+           l-12.666-12.666c-16.705-16.701-16.703-43.885,0-60.594l77.936-77.932c14.14-14.141,35.779-16.306,52.226-6.516l-32.302,32.307
+           c-7.606,7.604-7.606,19.938,0,27.541c7.605,7.607,19.937,7.607,27.541,0l32.306-32.303
+           C218.959,254.828,216.795,276.469,202.653,290.605z M238.382,209.169l32.299-32.306c7.608-7.602,7.608-19.935,0-27.538
+           c-7.604-7.61-19.936-7.61-27.541-0.004l-32.303,32.303c-9.791-16.446-7.627-38.087,6.514-52.226l77.935-77.935
+           c16.707-16.707,43.89-16.707,60.594,0l12.664,12.664c16.705,16.705,16.705,43.886,0,60.591l-77.936,77.937
+           C276.468,216.797,254.828,218.959,238.382,209.169z" />
+        </g>
+    </symbol>
+
+    <symbol id="entry__corner">
+        <g transform="translate(-1032.000000, -202.000000)">
+            <g transform="translate(120.000000, 202.000000)">
+                <g transform="translate(912.000000, 0.000000)">
+                    <path d="M0,0 L42.9989967,0 C45.7609746,0 48,2.23479023 48,5.0010033 L48,48 L0,0 Z" id="corner"></path>
+                </g>
+            </g>
+        </g>
+    </symbol>
+
+    <symbol id="star" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1059.000000, -208.000000)" fill="#FFFFFF">
+            <g transform="translate(120.000000, 202.000000)">
+                <g id="priority" transform="translate(912.000000, 0.000000)">
+                    <path d="M34.4404914,16.7763769 L31.1425904,19.0712585 C30.2333248,19.7039812 29.7535928,19.3661903 30.0770367,18.2970884 L31.2404914,14.4514408 L28.0388219,12.024108 C27.1560883,11.3548672 27.3291012,10.7942317 28.4458271,10.7714746 L32.4627826,10.6896152 L33.781943,6.89455948 C34.1456492,5.84822317 34.7323091,5.83952232 35.0990397,6.89455948 L36.4182001,10.6896152 L40.4351556,10.7714746 C41.5426719,10.794044 41.7322348,11.349302 40.8421609,12.024108 L37.6404914,14.4514408 L38.803946,18.2970884 C39.1247225,19.3573734 38.6552189,19.7092426 37.7383923,19.0712585 L34.4404914,16.7763769 Z"></path>
+                </g>
+            </g>
+        </g>
+    </symbol>
+
+    <symbol viewBox="0 0 15 14" id="list-icon">
+        <g transform="translate(-150.000000, -528.000000)">
+            <g transform="translate(120.000000, 446.000000)">
+                <g transform="translate(30.000000, 30.000000)">
+                    <g  transform="translate(0.000000, 49.000000)">
+                        <path d="M2,7 C3.1045695,7 4,6.1045695 4,5 C4,3.8954305 3.1045695,3 2,3 C0.8954305,3 0,3.8954305 0,5 C0,6.1045695 0.8954305,7 2,7 Z M2,12 C3.1045695,12 4,11.1045695 4,10 C4,8.8954305 3.1045695,8 2,8 C0.8954305,8 0,8.8954305 0,10 C0,11.1045695 0.8954305,12 2,12 Z M2,17 C3.1045695,17 4,16.1045695 4,15 C4,13.8954305 3.1045695,13 2,13 C0.8954305,13 0,13.8954305 0,15 C0,16.1045695 0.8954305,17 2,17 Z M6,4 L16,4 L16,6 L6,6 L6,4 Z M6,9 L16,9 L16,11 L6,11 L6,9 Z M6,14 L16,14 L16,16 L6,16 L6,14 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </symbol>
+
+    <symbol  viewBox="0 0 18 20" id="icon-calendar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-150.000000, -851.000000)" fill="#A6AEB6">
+            <g transform="translate(120.000000, 634.000000)">
+                <g transform="translate(30.000000, 217.000000)">
+                    <path d="M6,2 L12,2 L12,0 L14,0 L14,2 L16.0049107,2 C17.1067681,2 18,2.8926228 18,3.99508929 L18,18.0049107 C18,19.1067681 17.1073772,20 16.0049107,20 L1.99508929,20 C0.893231902,20 0,19.1073772 0,18.0049107 L0,3.99508929 C0,2.8932319 0.892622799,2 1.99508929,2 L4,2 L4,0 L6,0 L6,2 Z M12,2 L14,2 L14,4 L12,4 L12,2 Z M6,2 L4,2 L4,4 L6,4 L6,2 Z M2,8 L16,8 L16,18 L2,18 L2,8 Z"></path>
+                    <rect id="Rectangle-314" x="10" y="12" width="4" height="4"></rect>
+                </g>
+            </g>
+        </g>
+    </symbol>
+
+    <symbol id="icon-lock"  viewBox="0 0 486.733 486.733">
+        <path d="M403.88,196.563h-9.484v-44.388c0-82.099-65.151-150.681-146.582-152.145c-2.225-0.04-6.671-0.04-8.895,0
+       		C157.486,1.494,92.336,70.076,92.336,152.175v44.388h-9.485c-14.616,0-26.538,15.082-26.538,33.709v222.632
+       		c0,18.606,11.922,33.829,26.539,33.829h321.028c14.616,0,26.539-15.223,26.539-33.829V230.272
+       		C430.419,211.646,418.497,196.563,403.88,196.563z M273.442,341.362v67.271c0,7.703-6.449,14.222-14.158,14.222H227.45
+       		c-7.71,0-14.159-6.519-14.159-14.222v-67.271c-7.477-7.36-11.83-17.537-11.83-28.795c0-21.334,16.491-39.666,37.459-40.513
+       		c2.222-0.09,6.673-0.09,8.895,0c20.968,0.847,37.459,19.179,37.459,40.513C285.272,323.825,280.919,334.002,273.442,341.362z
+       		 M331.886,196.563h-84.072h-8.895h-84.072v-44.388c0-48.905,39.744-89.342,88.519-89.342c48.775,0,88.521,40.437,88.521,89.342
+       		V196.563z" />
+    </symbol>
+
+    <symbol id="icon-box" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g  transform="translate(-1058.000000, -1891.000000)" fill="#FFFFFF">
+            <g transform="translate(120.000000, 1884.000000)">
+                <g transform="translate(912.000000, 0.000000)">
+                    <path d="M27,11 L41,11 L41,20.0046024 C41,20.5543453 40.5500512,21 39.9931545,21 L28.0068455,21 C27.4507801,21 27,20.5443356 27,20.0046024 L27,11 Z M32,13 L36,13 L36,15 L32,15 L32,13 Z M26,10 L42,10 L42,7.99895656 C42,7.44724809 41.5553691,7 40.9991283,7 L27.0008717,7 C26.4481055,7 26,7.44266033 26,7.99895656 L26,10 Z"></path>
+                </g>
+            </g>
+        </g>
+    </symbol>
+
+    <symbol id="icon-prompt" viewBox="0 0 34 33">
+      <defs>
+            <path d="M15.9996863,3.34551972 C14.3056865,1.58609509 11.9447517,0.494444444 9.33332178,0.494444444 C4.17867049,0.494444444 0,4.74773932 0,9.99444444 C0,15.2411496 4.17867049,19.4944444 9.33332178,19.4944444 L9.33332178,19.4944444 C11.944913,19.4944444 14.305978,18.402659 16,16.6430433" id="path-1"></path>
+
+            <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="16" height="19" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+        </defs>
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g transform="translate(-24.000000, -9.000000)">
+                    <g transform="translate(24.000000, 9.000000)">
+                        <rect id="Rectangle-465" fill="#2E3339" x="0.5" y="0" width="100%" height="100%" rx="8"></rect>
+                        <g transform="translate(8.000000, 6.505556)">
+                            <use id="Oval-1" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="3" xlink:href="#path-1"></use>
+                            <path d="M10,9.49444444 L10,6.49444444 L9,6.49444444 L9,9.49444444 L6,9.49444444 L6,10.4944444 L9,10.4944444 L9,13.4944444 L10,13.4944444 L10,10.4944444 L13,10.4944444 L13,9.49444444 L10,9.49444444 Z" id="Rectangle-466" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+    </symbol>
+
+    <symbol id="icon-close" viewBox="0 0 13 12">
+      <g fill-rule="evenodd">
+          <g transform="translate(-732.000000, -19.000000)">
+              <g id="notification">
+                  <g id="close" transform="translate(732.000000, 19.000000)">
+                      <path d="M0.629616477,11.6409801 L11.8179155,0.4526811"></path>
+                      <path d="M0.629616477,11.6409801 L11.8179155,0.4526811" transform="translate(6.223766, 6.046831) scale(-1, 1) translate(-6.223766, -6.046831) "></path>
+                  </g>
+              </g>
+          </g>
+      </g>
+    </symbol>
+
+    </svg>
+
+
+    <div class="main-wrapper">
+        <div class="prompt">
+            <div class="container">
+                <div class="prompt__text-wrap">
+                    <svg class="prompt__icon">
+                      <use xlink:href="#icon-prompt"></use>
+                    </svg>
+                    <h4 class="prompt__text-title">Centrallo</h4>
+                    <p class="prompt__text">Download it for free on the App Store</p>
+                    <p class="prompt__text--xs">Free on the App Store</p>
+                </div>
+
+
+                <div class="prompt__buttons-wrap">
+                    <button class="prompt__button-dld button--white">Download</button>
+
+                    <button class="prompt__button-close">
+                  <svg>
+                    <use xlink:href="#icon-close"></use>
+                  </svg>
+                </button>
+                </div>
+
+            </div>
+        </div>
+
+        <header class="main-header">
+            <div class="container">
+                <a href="index.html" class="main-header__logo"></a>
+                <div class="main-header__authorization authorization-menu">
+                    <a class="authorization-menu__sign-up" href="#">Sign up <span>for free</span></a>
+                    <span> — start publishing in minutes</span>
+                    <a class="authorization-menu__login" href="#">Log in</a>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="container">
+            <a href="#" class="user-info">
+                <div class="user-info__img-wrap">
+                    <img class="user-info__img" src="./img/common/ava@2x.png" alt="user avatar">
+                </div>
+                <span class="user-info__name">Konstantin Vladimirskiy</span>
+            </a>
+
+            <div class="social-links hidden-xs">
+                <a href="#">
+                    <svg width="8" height="16">
+                     <use class="social-links__icon" xlink:href="#icon-fb"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                    <svg width="16" height="13">
+                      <use class="social-links__icon" xlink:href="#icon-tw"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="20" height="12">
+                      <use class="social-links__icon" xlink:href="#icon-vk"></use>
+                   </svg>
+                </a>
+                <a href="#">
+                    <svg width="15" height="15">
+                      <use class="social-links__icon" xlink:href="#icon-in"></use>
+                   </svg>
+                </a>
+                <div class="social-links__user user-link"><span>http://cll.io/a6lnu</span></div>
+            </div>
+        </div>
+
+        <!-- share-modal -->
+        <div class="share-modal modal fade " id="share-modal" aria-hidden="true">
+            <div class="modal__body">
+                <h4 class="modal__title">Share</h4>
+                <div class="share-modal__links-wrap">
+                    <div class="share-modal__links-user user-link"><span>http://cll.io/a6lnu</span></div>
+
+                    <div class="share-modal__social-links-wrap">
+                        <a href="#" class="share-modal__social-links icon-bg-fb">
+                            <svg width="9" height="19">
+                          <use xlink:href="#icon-fb"></use>
+                        </svg>
+                        </a>
+                    </div>
+
+
+                    <div class="share-modal__social-links-wrap">
+                        <a href="#" class="share-modal__social-links icon-bg-tw">
+                            <svg width="17" height="15">
+                          <use xlink:href="#icon-tw"></use>
+                        </svg>
+                        </a>
+                    </div>
+
+
+                    <div class="share-modal__social-links-wrap">
+                        <a href="#" class="share-modal__social-links icon-bg-vk">
+                            <svg width="20" height="11">
+                          <use xlink:href="#icon-vk"></use>
+                        </svg>
+                        </a>
+                    </div>
+
+
+                    <div class="share-modal__social-links-wrap">
+                        <a href="#" class="share-modal__social-links icon-bg-in">
+                            <svg width="16" height="16">
+                          <use xlink:href="#icon-in"></use>
+                        </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /share-modal -->
+
+        <div class="container">
+            <div class="post-release hidden-xs">Post-release checklist 2015.02.26</div>
+            <button class="button--blue button-add">Add to my Centrallo</button>
+            <button class="button--white button-share--big visible-xs">
+              <i>
+                <svg width="14" height="14">
+                  <use xlink:href="#icon-share"></use>
+                </svg>
+            </i>
+            Share
+          </button>
+            <div class="post-release visible-xs">Post-release checklist 2015.02.26</div>
+
+        </div>
+
+        <div class="container">
+            <div class="entry">
+
+                <div class="entry__corner-wrap">
+                    <svg class="entry__corner entry__corner--favorites"><use xlink:href="#entry__corner"></use></svg>
+                    <svg class="entry__corner-icon"><use xlink:href="#star"></use></svg>
+                </div>
+
+                <form id="user-settings" class="user-settings" action="#">
+                    <div class="user-settings__label"><input class="user-settings__check" type="checkbox">Referral Accepted and Invited invitations not sorted by A-Z</div><br>
+                    <div class="user-settings__label"><input class="user-settings__check" type="checkbox">Inbox shows me 242 items - that includes Done items; Only show me active</div><br>
+                    <div class="user-settings__label"><input class="user-settings__check" type="checkbox">Inbox defaults to show done items - it should not</div><br>
+                    <div class="user-settings__label"><input class="user-settings__check" type="checkbox">Lists default to Show Done - they should not</div><br>
+                    <div class="user-settings__label"><input class="user-settings__check" type="checkbox">Recent view should sort by Created and show no Done items</div>
+                </form>
+
+                <div class="entry__bottom-row">
+                    <div class="entry__date">2h ago</div>
+
+                    <div class="entry__links">
+                        <button class="button-share">
+                            <svg>
+                              <use class="entry__links-icon" xlink:href="#icon-share"></use>
+                         </svg>
+                        </button>
+
+                        <button class="button-url">
+                            <svg>
+                              <use class="entry__links-icon" xlink:href="#icon-url"></use>
+                         </svg>
+                       </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="entry">
+                <div class="entry__row">
+                    <div class="entry__list">
+                        <svg class="entry__list-icon--active">
+                            <use xlink:href="#list-icon"></use>
+                        </svg>
+                        <h3 class="entry__list-title">Children</h3>
+                        <div class="entry__list-info">
+                            <span class="entry__list-info-items">12 items</span>
+                            <span class="entry__list-info-date">7h ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="entry__separator hidden-xs"></div>
+                <div class="entry__row">
+                    <div class="entry__list">
+                        <svg class="entry__list-icon">
+                            <use xlink:href="#list-icon"></use>
+                        </svg>
+                        <h3 class="entry__list-title">The longest title in the world</h3>
+                        <div class="entry__list-info">
+                            <span class="entry__list-info-items">3 items</span>
+                            <span class="entry__list-info-date">Mar 13</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="entry__bottom-row margin-none">
+                    <div class="entry__date">2h ago</div>
+
+                    <div class="entry__links">
+                        <button class="button-share">
+                            <svg>
+                              <use class="entry__links-icon" xlink:href="#icon-share"></use>
+                         </svg>
+                        </button>
+
+                        <button class="button-url">
+                            <svg>
+                              <use class="entry__links-icon" xlink:href="#icon-url"></use>
+                         </svg>
+                       </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="entry">
+                <div class="entry__row-img">
+                    <a class="entry__video-link xs-disp-block" href="#">
+                        <img class="display-normal img-fill" src="./img/common/video@2x.png" alt="photo-1">
+                        <!-- <img class="entry__img display-retina" src="./img/common/video@3x.png" alt="photo-1"> -->
+                    </a>
+                    <a class="entry__img-link xs-disp-block" href="#">
+                        <img class="display-normal img-fill" src="./img/common/photo-1@2x.png" alt="photo-1">
+                        <!-- <img class="entry__img display-retina" src="./img/common/photo-1@3x.png" alt="photo-1"> -->
+                    </a>
+
+                    <a class="entry__img-link xs-disp-block" href="#">
+                        <img class="display-normal img-fill" src="./img/common/photo-2@2x.png" alt="photo-1">
+                        <!-- <img class="entry__img display-retina" src="./img/common/photo-2@3x.png" alt="photo-1"> -->
+                    </a>
+                </div>
+
+                <div class="entry__separator"></div>
+
+                <div class="entry__row">
+                    <div class="entry__reminder">
+
+                        <svg class="entry__reminder-icon">
+                            <use xlink:href="#icon-calendar"></use>
+                        </svg>
+
+                        <p class="entry__reminder-text">Due on Feb 13, 12:42 PM</p>
+                    </div>
+                </div>
+
+                <div class="entry__bottom-row">
+                    <div class="entry__date">Feb 14</div>
+
+                    <div class="entry__links">
+                        <button class="button-share">
+                            <svg>
+                              <use class="entry__links-icon" xlink:href="#icon-share"></use>
+                         </svg>
+                        </button>
+
+                        <button class="button-url">
+                            <svg>
+                              <use class="entry__links-icon" xlink:href="#icon-url"></use>
+                         </svg>
+                       </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="entry">
+                <p class="entry__text">The Dark Knight Rises is a 2012 British-American superhero film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan, and the story with David S. Goyer. Featuring the DC Comics character Batman, the
+                    film is the final installment in Nolan's Batman film trilogy, and the sequel to Batman Begins (2005) and The Dark Knight (2008). Christian Bale reprises the lead role of Bruce Wayne/Batman, with a returning cast of allies: Michael
+                    Caine as Alfred Pennyworth, Gary Oldman as James Gordon, and Morgan Freeman as Lucius Fox. The film introduces Selina Kyle (Anne Hathaway), a sly, morally ambiguous cat burglar, and Bane (Tom Hardy), a revolutionary bent on destroying
+                    Gotham City who forces an older Bruce Wayne to come out of retirement and become Batman again.</p>
+                <div class="entry__row-img">
+                    <a href="#" class="entry__img-link">
+                        <img class="display-normal hidden-xs" src="./img/common/photo-3@2x.png" alt="photo Batman 1">
+                        <img class="visible-xs" width="176" src="./img/common/photo-3@2x.png" alt="photo Batman 1">
+                        <!-- <img class="display-retina" src="./img/common/photo-3@3x.png" alt="photo Batman 1"> -->
+                    </a>
+                    <a href="#" class="entry__img-link">
+                        <img class="display-normal hidden-xs" src="./img/common/photo-4@2x.png" alt="photo Batman 2">
+                        <img class="visible-xs" width="77" src="./img/common/photo-4@2x.png" alt="photo Batman 2">
+                        <!-- <img class="display-retina" src="./img/common/photo-4@3x.png" alt="photo Batman 2"> -->
+                    </a>
+                    <a href="#" class="entry__img-link xs-disp-block ">
+                        <img class="display-normal img-fill" src="./img/common/photo-5@2x.png" alt="photo Batman 3">
+                        <!-- <img class="display-retina"  src="./img/common/photo-5@3x.png" alt="photo Batman 3"> -->
+                    </a>
+                    <a href="#" class="entry__img-link xs-disp-block ">
+                        <img class="display-normal img-fill" src="./img/common/photo-6@2x.png" alt="photo Batman 4">
+                        <!-- <img class="display-retina" src="./img/common/photo-6@3x.png" alt="photo Batman 4"> -->
+                    </a>
+                </div>
+
+                <div class="entry__separator"></div>
+
+                <div class="entry__row">
+                    <div class="map-wrap">
+                        <img class="map__img" src="./img/common/map@2x.png" alt="map">
+                    </div>
+                    <h3 class="entry__title">Merry Bergtraum High School for Business Cariers</h3>
+                    <p class="entry__caption">411 Pearl St, NY 10038</p>
+                    <p class="entry__caption">United States of America</p>
+                    <a class="map-link" href="https://www.google.ru/maps/place/411+Pearl+St,+New+York,+NY+10038,+%D0%A1%D0%A8%D0%90/@40.7110356,-74.0035103,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25a23876025a5:0xb2bb12fd1768f07!8m2!3d40.7110316!4d-74.0013216?hl=ru">Watch location on Google Maps</a>
+                </div>
+
+                <div class="entry__separator"></div>
+
+                <div class="attach-file__row">
+                    <a href="#" class="attach-file">
+                        <div class="attach-file__icon attach-file__icon-db"></div>
+                        <span class="attach-file__caption">logo_final.eps</span>
+                    </a>
+                    <a href="#" class="attach-file">
+                        <div class="attach-file__icon attach-file__icon-skydrive"></div>
+                        <span class="attach-file__caption">photos_summer.zip</span>
+                    </a>
+                    <a href="#" class="attach-file">
+                        <div class="attach-file__icon attach-file__icon-w-doc"></div>
+                        <span class="attach-file__caption">work_…hard.doc</span>
+                    </a>
+
+                </div>
+
+
+                <div class="entry__bottom-row">
+                    <div class="entry__date">Jan 12</div>
+
+                    <div class="entry__links">
+                        <button class="button-share">
+                            <svg>
+                              <use class="entry__links-icon" xlink:href="#icon-share"></use>
+                         </svg>
+                        </button>
+
+                        <button class="button-url">
+                            <svg>
+                              <use class="entry__links-icon" xlink:href="#icon-url"></use>
+                         </svg>
+                       </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="entry">
+
+                <div class="entry__corner-wrap">
+                    <svg class="entry__corner entry__corner--protected"><use xlink:href="#entry__corner"></use></svg>
+                    <svg class="entry__corner-icon"><use xlink:href="#icon-lock"></use></svg>
+                </div>
+
+                <div class="entry__row">
+                    <div class="entry__date">Nov 22</div>
+                    <div class="entry__specific--blue">Protected</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="entry entry--archived">
+                <div class="entry__corner-wrap">
+                    <svg class="entry__corner entry__corner--archived"><use xlink:href="#entry__corner"></use></svg>
+                    <svg class="entry__corner-icon"><use xlink:href="#icon-box"></use></svg>
+                </div>
+
+                <div class="entry__row">
+                    <div class="entry__date">Nov 22</div>
+                    <div class="entry__specific">Archived</div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="main-footer">
+            <div class="container">
+                <div class="main-footer__copyright">© CENTRALLO 2015</div>
+                <nav class="main-footer__nav">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="main-footer__soc-links">
+                    <a href="#">
+                        <svg width="20" height="16">
+                           <use class="main-footer__soc-links-icon" xlink:href="#icon-tw"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="10" height="20">
+                           <use class="main-footer__soc-links-icon" xlink:href="#icon-fb"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/common.js"></script>
+    <!-- <script src="./js/bootstrap.js"></script> -->
+
+</body>
+
+</html>
