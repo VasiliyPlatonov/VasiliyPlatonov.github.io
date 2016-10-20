@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="33px" viewBox="0 0 34 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M15.9996863,3.34551972 C14.3056865,1.58609509 11.9447517,0.494444444 9.33332178,0.494444444 C4.17867049,0.494444444 0,4.74773932 0,9.99444444 C0,15.2411496 4.17867049,19.4944444 9.33332178,19.4944444 L9.33332178,19.4944444 C11.944913,19.4944444 14.305978,18.402659 16,16.6430433" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="16" height="19" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="public_page_768" transform="translate(-24.000000, -9.000000)">
+            <g id="notification">
+                <g id="icon" transform="translate(24.000000, 9.000000)">
+                    <rect id="Rectangle-465" fill="#2E3339" x="0.5" y="0" width="33" height="33" rx="8"></rect>
+                    <g id="Oval-1-+-Rectangle-2-Copy" transform="translate(8.000000, 6.505556)">
+                        <use id="Oval-1" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="3" xlink:href="#path-1"></use>
+                        <path d="M10,9.49444444 L10,6.49444444 L9,6.49444444 L9,9.49444444 L6,9.49444444 L6,10.4944444 L9,10.4944444 L9,13.4944444 L10,13.4944444 L10,10.4944444 L13,10.4944444 L13,9.49444444 L10,9.49444444 Z" id="Rectangle-466" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
