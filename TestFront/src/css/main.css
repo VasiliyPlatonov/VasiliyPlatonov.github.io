@@ -508,7 +508,8 @@ img {
   max-width: 100%;
   height: 100%;
   background-image: url("../img/main-wrapper/bg@2x.png");
-  background-size: auto; }
+  background-size: auto;
+  background-attachment: fixed; }
 
 .container {
   max-width: 1008px;
@@ -1125,9 +1126,6 @@ img {
 .display-retina {
   display: none; }
 
-/* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-/* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .container {
     max-width: 768px; }
@@ -1142,18 +1140,15 @@ img {
   .authorization-menu {
     text-align: right; }
     .authorization-menu span {
-      display: none; } }
+      display: none; }
+  .map-wrap {
+    max-width: 60%; } }
 
-/* Extra Small Devices, Phones, iPhone */
 @media only screen and (max-width: 480px) {
   .visible-xs {
     display: block; }
   .hidden-xs {
     display: none; }
-  .container {
-    padding-left: 12px;
-    padding-right: 12px;
-    max-width: 320px; }
   .main-header__logo {
     max-width: 108px;
     height: 30px;
@@ -1209,8 +1204,6 @@ img {
     font-size: 1em; }
   .post-release {
     font-size: 1.125em; }
-  .map-wrap {
-    margin-right: 0; }
   .attach-file {
     margin-right: 8px;
     margin-left: 8px;
@@ -1239,7 +1232,19 @@ img {
     width: 90px;
     margin-right: 10px; }
   .prompt__icon {
-    left: 12px; } }
+    left: 12px; }
+  .map-wrap {
+    float: none;
+    margin-right: 0;
+    max-width: 100%; }
+  .map__img {
+    width: 100%; } }
+
+@media only screen and (max-width: 320px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+    max-width: 320px; } }
 
 /* CSS правила для retina */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

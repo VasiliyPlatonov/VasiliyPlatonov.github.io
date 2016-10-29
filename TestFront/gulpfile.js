@@ -11,15 +11,18 @@ var gulp = require('gulp'),
     imageminSvgo = require('imagemin-svgo'),
     imageminJpegtran = require('imagemin-jpegtran'),
     imageminOptipng = require('imagemin-optipng'),
-    debug = require('gulp-debug'); // пример => .pipe(debug("title: "))
+    debug = require('gulp-debug'), // пример => .pipe(debug("title: "))
+    favicons = require("gulp-favicons"),
+    gutil = require("gulp-util");
+
 
 
 // SCSS - конвертирует стили scss => css
 gulp.task('scss', function() {
     return gulp.src('./src/scss/**/*.scss')
         .pipe(scss({
-          includePaths: require('bourbon').includePaths
-        }).on('error', scss.logError))             // <== BOURBON
+            includePaths: require('bourbon').includePaths
+        }).on('error', scss.logError)) // <== BOURBON
         .pipe(autoprefixer({
             browsers: ['last 5 versions'],
             cascade: true
@@ -37,7 +40,7 @@ gulp.task('build:css', function() {
             compatibility: 'ie9'
         }))
 
-        .pipe(rename(function(path) {
+    .pipe(rename(function(path) {
             path.basename += '.min';
         }))
         .pipe(gulp.dest('build/css/'));
@@ -64,15 +67,15 @@ gulp.task('src:scripts', function() {
 
 
 
-// BUILD:SCRIPTS - минифицирует -> конкатенирует -> складывает в build JS файлы плагинов
-gulp.task('build:scripts', function() {
-    gulp.src([ // Берем все необходимые библиотеки
-            './src/js/libs/**/*.js', // Берем все js файлы в libs
-        ])
-        .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
-        .pipe(uglify()) // Сжимаем JS файл
-        .pipe(gulp.dest('build/js')); // Выгружаем в папку app/js
-});
+// // BUILD:SCRIPTS - минифицирует -> конкатенирует -> складывает в build JS файлы плагинов
+// gulp.task('build:scripts', function() {
+//     gulp.src([ // Берем все необходимые библиотеки
+//             './src/js/libs/**/*.js', // Берем все js файлы в libs
+//         ])
+//         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
+//         .pipe(uglify()) // Сжимаем JS файл
+//         .pipe(gulp.dest('build/js')); // Выгружаем в папку app/js
+// });
 
 
 
@@ -83,6 +86,40 @@ gulp.task('build:img', function() {
         .pipe(gulp.dest('build/img'));
 });
 
+
+// Favicon - генерация  favicon
+gulp.task("favicon", function() {
+    return gulp.src("./src/img/favicon/favicon--big.png").pipe(favicons({
+            background: "#020307",
+            path: "./img/favicon/",
+            display: "standalone",
+            orientation: "portrait",
+            // start_url: "/?homescreen=1",
+            version: 1.0,
+            logging: false,
+            online: false,
+            html: "favicon.html",
+            pipeHTML: true,
+            replace: true,
+            "icons": {
+              "android": false,
+              "appleIcon": true,
+              "appleStartup": false,
+              "coast": false,
+              "favicons": true,
+              "firefox": true,
+              "windows": true,
+              "yandex": true
+            }
+            // appName: "My App",  // дополнительные параметры для приложений
+            // appDescription: "This is my application",
+            // developerName: "developerName",
+            // developerURL: "developerURL",
+            // url: "url",
+        }))
+        .on("error", gutil.log)
+        .pipe(gulp.dest("./src/img/favicon/"));
+});
 
 
 // DEL - удаляет папку build, чтобы не было ненужных файлов
@@ -107,11 +144,11 @@ gulp.task('watch', ['scss', 'src:scripts'], function() {
 
 
 // BUILD - таск причесывающий проект для продакшена
-gulp.task('build', ['build:del', 'build:css', 'build:scripts', 'build:img'], function() {
+gulp.task('build', ['build:del', 'build:css', 'build:img'], function() {
     var buildJs = gulp.src('src/js/**.js') // Переносим скрипты в продакшен./
         .pipe(gulp.dest('build/js'));
 
-    var buildHtml = gulp.src('src/**/*.html') // Переносим HTML в продакшен
+    var buildHtml = gulp.src('src/**.html') // Переносим HTML в продакшен
         .pipe(gulp.dest('build'));
 
     var buildFont = gulp.src('src/fonts/**/*') // Переносим HTML в продакшен

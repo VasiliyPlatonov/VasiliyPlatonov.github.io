@@ -1,8 +1,5 @@
-/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {}
-/* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {}
-/* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
     .container {
         max-width: 720px + $container-padding * 2;
@@ -15,8 +12,9 @@
     .modal__body {
         margin-top: 30%;
     }
+
     .prompt {
-      display: block;
+        display: block;
     }
 }
 @media only screen and (max-width : 630px) {
@@ -29,8 +27,12 @@
 
         &__sign-up {}
     }
+    .map {
+      &-wrap {
+        max-width: 60%;
+      }
+    }
 }
-/* Extra Small Devices, Phones, iPhone */
 @media only screen and (max-width : 480px) {
     .visible-xs {
         display: block;
@@ -38,12 +40,6 @@
 
     .hidden-xs {
         display: none;
-    }
-
-    .container {
-        padding-left: $container-padding--xs;
-        padding-right: $container-padding--xs;
-        max-width: 296px + $container-padding--xs * 2;
     }
 
     .main-header {
@@ -137,11 +133,6 @@
         font-size: em(18px);
     }
 
-    .map {
-        &-wrap {
-            margin-right: 0;
-        }
-    }
 
     .attach-file {
         margin-right: 8px;
@@ -196,6 +187,25 @@
         &__icon {
             left: $container-padding--xs;
         }
+    }
+
+    .map {
+        &-wrap {
+            float: none;
+            margin-right: 0;
+            max-width: 100%;
+        }
+
+        &__img {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width : 320px) {
+    .container {
+        padding-left: $container-padding--xs;
+        padding-right: $container-padding--xs;
+        max-width: 296px + $container-padding--xs * 2;
     }
 }
 /* CSS правила для retina */
