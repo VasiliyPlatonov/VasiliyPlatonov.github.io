@@ -28,9 +28,15 @@
         &__sign-up {}
     }
     .map {
-      &-wrap {
-        max-width: 60%;
-      }
+        &-wrap {
+            float: none;
+            margin-right: 0;
+            width: 100%;
+        }
+
+        &__img {
+            width: 100%;
+        }
     }
 }
 @media only screen and (max-width : 480px) {
@@ -189,17 +195,7 @@
         }
     }
 
-    .map {
-        &-wrap {
-            float: none;
-            margin-right: 0;
-            max-width: 100%;
-        }
 
-        &__img {
-            width: 100%;
-        }
-    }
 }
 @media only screen and (max-width : 320px) {
     .container {

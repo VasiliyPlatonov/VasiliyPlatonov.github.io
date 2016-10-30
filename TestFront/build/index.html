@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: ogp.me/ns#">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- OpenGraph -->
+    <meta property="og:image" content="img/favicon/favicon--big.png">
+    <meta property="og:title" content="Centrallo" />
+    <meta property="og:description" content="Test task for vacancy the html/frontend-developer for 4xxi company. Performed by Vasiliy Platonov"/>
+    <meta property="og:site_name" content="Centrallo"/>
+    <!-- Favicons -->
+    <!-- Standart -->
+    <meta name="theme-color" content="#3c434a">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="230x230" href="img/favicon/favicon-230x230.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <!-- Apple -->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
@@ -17,14 +29,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title">
+    <!-- Yandex -->
     <link rel="yandex-tableau-widget" href="img/favicon/yandex-browser-manifest.json">
-    <meta name="msapplication-TileColor" content="#020307">
+    <!-- Microsoft -->
+    <meta name="msapplication-TileColor" content="#3c434a">
     <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <!-- <link rel="shortcut icon" href="img/favicon/favicon.ico"> -->
     <title>Centrallo</title>
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -498,7 +508,7 @@
 
                 <div class="entry__row">
                     <div class="map-wrap">
-                        <img class="map__img" src="./img/common/map@2x.png" alt="map">
+                        <div class="map" id="map"></div>
                     </div>
                     <h3 class="entry__title">Merry Bergtraum High School for Business Cariers</h3>
                     <p class="entry__caption">411 Pearl St, NY 10038</p>
@@ -603,8 +613,8 @@
 
 
     <script src="./js/libs.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuOIRa7UIeA6zV-kEqilPCReWV9tY_aek&callback=initMap" async defer></script>
     <script src="./js/common.js"></script>
-    <!-- <script src="./js/bootstrap.js"></script> -->
 
 </body>
 

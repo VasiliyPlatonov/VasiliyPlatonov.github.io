@@ -379,13 +379,15 @@ img {
 
     &__links {
         float: right;
+
         button {
-          border: none;
-          background: none;
-          padding: 0;
+            border: none;
+            background: none;
+            padding: 0;
         }
 
-        a,button {
+        a,
+        button {
             margin-left: 25px;
             text-decoration: none;
 
@@ -434,7 +436,6 @@ img {
     }
 }
 
-
 .user-settings {
     color: #494949;
     font-size: em(16px);
@@ -444,34 +445,34 @@ img {
     overflow: hidden;
 
     &__check {
-      display: none;
+        display: none;
         // display: inline-block;
         position: absolute;
         cursor: pointer;
         left: 0;
         margin-top: em(4px);
-        width: 0px;
-        height: 0px;
-
+        width: 0;
+        height: 0;
         // display: none;
     }
- &__label {
-   cursor: pointer;
-   position: relative;
-   display: inline-block;
-   padding-left: 24px;
-   margin-bottom: 11px;
-   background-size: 14px 14px;
-   background-repeat: no-repeat;
-   background-position: 0 3px;
-   background-image: url(../img/checkbox-icon/check-empty.svg);
 
- }
- .label-empty {
+    &__label {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        padding-left: 24px;
+        margin-bottom: 11px;
+        background-size: 14px 14px;
+        background-repeat: no-repeat;
+        background-position: 0 3px;
+        background-image: url("../img/checkbox-icon/check-empty.svg");
     }
- .checkbox-select {
-   background-image: url(../img/checkbox-icon/check-select.svg);
- }
+
+    .label-empty {}
+
+    .checkbox-select {
+        background-image: url("../img/checkbox-icon/check-select.svg");
+    }
 }
 
 .user-settings label:last-of-type {
@@ -591,15 +592,19 @@ img {
 }
 
 .map {
+    width: 100%;
+    height: 100%;
     &-wrap {
         float: left;
+        width: 300px;
+        height: 200px;
         margin-right: 15px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
 
     &-link {
-        display: inline-block;
+        display: block;
         margin-top: 12px;
         @include transition;
 
@@ -859,9 +864,10 @@ img {
             @include transition;
             box-shadow: 0 1px 3px #000;
         }
+
         &:active {
             @include transition;
-            box-shadow: 0 0px 0px #fff;
+            box-shadow: 0 0 0 #fff;
         }
 
         svg {

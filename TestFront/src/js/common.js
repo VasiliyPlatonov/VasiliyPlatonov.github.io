@@ -39,7 +39,7 @@
     });
 
 
-// checkbox
+    // checkbox
     $('input[type="checkbox"]').parent().click(function() {
         var checkbox = $(this).children('input[type="checkbox"]');
         if (checkbox.attr('checked')) {
@@ -55,5 +55,50 @@
         }
     });
 
-
 })(jQuery);
+
+
+
+// Google Maps
+var map;
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+            lat: 40.711137,
+            lng: -74.001332
+        },
+        zoom: 16,
+        zoomControl: false,
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+            mapTypeIds: [
+                google.maps.MapTypeId.ROADMAP,
+                google.maps.MapTypeId.TERRAIN,
+                google.maps.MapTypeId.SATELLITE
+            ]
+        }
+    });
+
+    var marker = new google.maps.Marker({
+        map: map,
+        // Define the place with a location, and a query string.
+        place: {
+            location: {
+                lat: 40.711137,
+                lng: -74.001332
+            },
+            query: 'Go'
+        }
+    });
+
+    // Construct a new InfoWindow.
+    var infoWindow = new google.maps.InfoWindow({
+        content: 'Merry Bergtraum High School for Business Cariers'
+    });
+
+    // Opens the InfoWindow when marker is clicked.
+    marker.addListener('click', function() {
+        infoWindow.open(map, marker);
+    });
+}
