@@ -1,0 +1,51 @@
+.emergence {
+    &--start {
+        // transition-delay: 0s;
+        // transition-property: all;
+        // transition-duration: 0s;
+        // transition-timing-function: ease-in-out;
+        opacity: 0 !important;
+    }
+
+    &--finish {
+        transition-delay: 0.5s;
+        transition-property: all;
+        transition-duration: 0.7s;
+        transition-timing-function: ease;
+        opacity: 1 !important;
+    }
+}
+
+.slideFromLeft {
+    &--start {
+        transition: 0.7s;
+        position: relative;
+        left: -3000px !important;
+    }
+
+    &--finish {
+        transition-delay: 0.3s;
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+        position: relative;
+        left: 0;
+    }
+}
+
+.slideFromRight {
+    &--start {
+        transition: 0.7s;
+        position: relative;
+        right: -3000px !important;
+    }
+
+    &--finish {
+        transition-delay: 0.3s;
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+        position: relative;
+        right: 0;
+    }
+}

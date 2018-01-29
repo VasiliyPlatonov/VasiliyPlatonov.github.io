@@ -1,0 +1,23 @@
+{
+  "name": "stantartTask",
+  "description": "",
+  "main": "",
+  "authors": [
+    "VasiliyPlatonov"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^1.*",
+    "bootstrap-sass": "^3.3.7"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "stantartTask",
+  "private": true,
+  "author": "VasiliyPlatonov",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "favicons": "^4.8.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-favicons": "^2.2.7",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-svg-sprite": "^1.3.6",
+    "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "bourbon": "^4.2.7",
+    "del": "^2.2.1",
+    "imagemin-jpegtran": "^5.0.2"
+  }
+}

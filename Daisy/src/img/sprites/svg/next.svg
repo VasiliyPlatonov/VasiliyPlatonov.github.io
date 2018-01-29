@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg version="1.1" id="slider__next"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 31 31"
+	 overflow="scroll" xml:space="preserve">
+	<path fill-rule="evenodd" fill="#FC635E" d="M9.2,5.6l6.1,9.9L9.2,25.6l17.4-10L9.2,5.6z M0,15.5C0,24,6.9,31,15.5,31
+		C24,31,31,24,31,15.5C31,7,24,0,15.5,0C6.9,0,0,7,0,15.5z M1.4,15.5c0-7.8,6.3-14.1,14.1-14.1c7.8,0,14.1,6.3,14.1,14.1
+		c0,7.8-6.3,14.1-14.1,14.1C7.7,29.6,1.4,23.3,1.4,15.5z"/>
+</svg>

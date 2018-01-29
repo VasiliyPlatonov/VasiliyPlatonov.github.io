@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg
+	version="1.1"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	viewBox="0 0 174 201"
+	enable-background="new 0 0 174 201"
+	xml:space="preserve">
+	<path id="path5074" fill-opacity="0" stroke="#CDCDCD" d="M173.4,150.3l-86,50L1.2,150.7L1,51.1l86-50l86.2,49.6L173.4,150.3z"/>
+	<ellipse id="circle12-6" fill="#FC645F" cx="87.6" cy="201.3" rx="0" ry="0"/>
+	<g stroke="#fc645f" stroke-width="4px" stroke-dasharray="0% 100%" fill="none">
+		<path class="hexagon-line side-0" d="M-89.7,100.7l92,49.1"/>
+		<path class="hexagon-line side-5" d="M1.1,150.9L1,51.1"/>
+		<circle fill="#FFFFFF" stroke="#FC645F" stroke-width="3" stroke-dasharray="187.9854,187.9854" cx="0" cy="51.2" r="18"/>
+		<path class="hexagon-line side-6" d="M0.7,51.4L87.2,1"/>
+	</g>
+		<path
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			fill="#FFFFFF"
+			d="M10.1,40.8h-20.2c-0.8,0-1.4,0.6-1.4,1.4V57
+			c0,0.8,0.6,1.4,1.4,1.4h20.2c0.8,0,1.4-0.6,1.4-1.4V42.3C11.5,41.5,10.9,40.8,10.1,40.8z M9.8,56H-9.8V42.8H9.8V56z M-2.6,59.1
+			l-2.6,2.7H5.3l-2.6-2.7H-2.6z M-6.8,53.3c0.5,0,0.9-0.4,0.9-1c0-0.1,0-0.2-0.1-0.3c1.2-1,3.3-2.7,4.3-3.5c0.2,0.1,0.3,0.2,0.5,0.2
+			c0.2,0,0.3-0.1,0.5-0.1C0,49.2,1,50.1,1.8,50.8c0,0.1,0,0.1,0,0.2c0,0.5,0.4,1,0.9,1c0.5,0,0.9-0.4,0.9-1c0-0.1,0-0.2-0.1-0.3
+			L6,48.5c0.1,0.1,0.3,0.1,0.4,0.1c0.5,0,0.9-0.4,0.9-1c0-0.5-0.4-1-0.9-1s-0.9,0.4-0.9,1c0,0.1,0,0.2,0.1,0.4
+			c-0.7,0.6-1.7,1.6-2.4,2.2C3,50.1,2.9,50,2.7,50c-0.2,0-0.4,0.1-0.6,0.2c-0.6-0.5-1.6-1.4-2.3-2c0-0.1,0.1-0.2,0.1-0.3
+			c0-0.5-0.4-1-0.9-1c-0.5,0-0.9,0.4-0.9,1c0,0.1,0,0.2,0.1,0.3l-4.3,3.4c-0.2-0.1-0.3-0.2-0.5-0.2c-0.5,0-0.9,0.4-0.9,1
+			C-7.7,52.9-7.3,53.3-6.8,53.3z"/>
+</svg>
